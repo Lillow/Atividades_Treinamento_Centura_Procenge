@@ -1,4 +1,4 @@
-Código  Data         Descrição
+Código  Data          Descrição
 002     25-Nov-2022   Descrição do elemento 002
 004     27-Nov-2022   Descrição do elemento 004
 006     29-Nov-2022   Descrição do elemento 006
