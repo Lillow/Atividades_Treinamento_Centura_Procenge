@@ -14,4 +14,3 @@ Código  Data          Descrição
 026     20-Dec-2022   Descrição do elemento 026
 028     22-Dec-2022   Descrição do elemento 028
 030     24-Dec-2022   Descrição do elemento 030
-O arquivo tem 15 linhas
