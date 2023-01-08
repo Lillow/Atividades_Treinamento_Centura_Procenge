@@ -1,0 +1,17 @@
+Código  Data          Descrição
+002     10-Jan-2023   Descrição do elemento 002
+004     12-Jan-2023   Descrição do elemento 004
+006     14-Jan-2023   Descrição do elemento 006
+008     16-Jan-2023   Descrição do elemento 008
+010     18-Jan-2023   Descrição do elemento 010
+012     20-Jan-2023   Descrição do elemento 012
+014     22-Jan-2023   Descrição do elemento 014
+016     24-Jan-2023   Descrição do elemento 016
+018     26-Jan-2023   Descrição do elemento 018
+020     28-Jan-2023   Descrição do elemento 020
+022     30-Jan-2023   Descrição do elemento 022
+024     01-Feb-2023   Descrição do elemento 024
+026     03-Feb-2023   Descrição do elemento 026
+028     05-Feb-2023   Descrição do elemento 028
+030     07-Feb-2023   Descrição do elemento 030
+O arquivo tem 15 linhas
