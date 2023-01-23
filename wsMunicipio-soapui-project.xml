@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="91f0c256-e416-4c8c-a21e-35f3e764f692" activeEnvironment="Default" name="wsMunicipio" resourceRoot="" soapui-version="5.6.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="f60d3b10-6471-4ef1-a9bd-b3de48d3ed50" wsaVersion="NONE" name="wsPIR_MUNICIPIOSoap" type="wsdl" bindingName="{pir360}wsPIR_MUNICIPIOSoap" soapVersion="1_1" anonymous="optional" definition="http://localhost/Desenv_Aluno02/wsPIR_MUNICIPIO.asmx?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://localhost/Desenv_Aluno02/wsPIR_MUNICIPIO.asmx</con:endpoint></con:endpoints><con:operation id="1ee4bd6c-314c-4c31-b129-599464cb2966" isOneWay="false" action="pir360/Consultar" name="Consultar" bindingOperationName="Consultar" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="149f812b-bac9-4d59-9bac-942ce76e37da" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsPIR_MUNICIPIO.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:Consultar>\r
+         <!--Optional:-->\r
+         <pir:Filtro>\r
+            <!--Optional:-->\r
+            <pir:COD_MUNICIPIO></pir:COD_MUNICIPIO>\r
+            <!--Optional:-->\r
+            <pir:COD_UF>PE</pir:COD_UF>\r
+            <!--Optional:-->\r
+            <pir:DSC_MUNICIPIO></pir:DSC_MUNICIPIO>\r
+         </pir:Filtro>\r
+      </pir:Consultar>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/Consultar"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="b4df878a-c61b-4e52-9d33-3c112b634aa6" wsaVersion="NONE" name="wsPIR_MUNICIPIOSoap12" type="wsdl" bindingName="{pir360}wsPIR_MUNICIPIOSoap12" soapVersion="1_2" anonymous="optional" definition="http://localhost/Desenv_Aluno02/wsPIR_MUNICIPIO.asmx?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost/Desenv_Aluno02/wsPIR_MUNICIPIO.asmx?wsdl"><con:part><con:url>http://localhost/Desenv_Aluno02/wsPIR_MUNICIPIO.asmx?wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="pir360" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="pir360" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="pir360">
+      <s:element name="Consultar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Filtro" type="tns:fcPIR_MUNICIPIO_filtro"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="fcPIR_MUNICIPIO_filtro">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:SalFunctionalClass">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="COD_MUNICIPIO" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="COD_UF" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="DSC_MUNICIPIO" type="s:string"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="SalFunctionalClass"/>
+      <s:complexType name="fcPIR_MUNICIPIO_dados">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:SalFunctionalClass">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="COD_MUNICIPIO" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="DSC_MUNICIPIO" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="COD_UF" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="IND_UTILIZA_DIPAMB" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="IND_CAPITAL" type="s:string"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="fcMensagem">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:SalFunctionalClass">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="fcBaseRS">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:SalFunctionalClass">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="oMsg" type="tns:fcMensagem"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="fcPIR_MUNICIPIO_RS">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:fcBaseRS">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="conteudo" type="tns:ArrayOfFcPIR_MUNICIPIO_dados"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfFcPIR_MUNICIPIO_dados">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="fcPIR_MUNICIPIO_dados" nillable="true" type="tns:fcPIR_MUNICIPIO_dados"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ConsultarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultarResult" type="tns:fcPIR_MUNICIPIO_RS"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ConsultarSoapIn">
+    <wsdl:part name="parameters" element="tns:Consultar"/>
+  </wsdl:message>
+  <wsdl:message name="ConsultarSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultarResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="wsPIR_MUNICIPIOSoap">
+    <wsdl:operation name="Consultar">
+      <wsdl:input message="tns:ConsultarSoapIn"/>
+      <wsdl:output message="tns:ConsultarSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsPIR_MUNICIPIOSoap" type="tns:wsPIR_MUNICIPIOSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Consultar">
+      <soap:operation soapAction="pir360/Consultar" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsPIR_MUNICIPIOSoap12" type="tns:wsPIR_MUNICIPIOSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Consultar">
+      <soap12:operation soapAction="pir360/Consultar" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsPIR_MUNICIPIO">
+    <wsdl:port name="wsPIR_MUNICIPIOSoap" binding="tns:wsPIR_MUNICIPIOSoap">
+      <soap:address location="http://localhost/Desenv_Aluno02/wsPIR_MUNICIPIO.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="wsPIR_MUNICIPIOSoap12" binding="tns:wsPIR_MUNICIPIOSoap12">
+      <soap12:address location="http://localhost/Desenv_Aluno02/wsPIR_MUNICIPIO.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost/Desenv_Aluno02/wsPIR_MUNICIPIO.asmx</con:endpoint></con:endpoints><con:operation id="ffdcfdd9-7315-490b-91f5-aa49b5b598bc" isOneWay="false" action="pir360/Consultar" name="Consultar" bindingOperationName="Consultar" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f43d7cd0-4afd-4176-848c-ca98e032c630" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsPIR_MUNICIPIO.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:Consultar>\r
+         <!--Optional:-->\r
+         <pir:Filtro>\r
+            <!--Optional:-->\r
+            <pir:COD_MUNICIPIO>?</pir:COD_MUNICIPIO>\r
+            <!--Optional:-->\r
+            <pir:COD_UF>?</pir:COD_UF>\r
+            <!--Optional:-->\r
+            <pir:DSC_MUNICIPIO>?</pir:DSC_MUNICIPIO>\r
+         </pir:Filtro>\r
+      </pir:Consultar>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/wsPIR_MUNICIPIOSoap/ConsultarRequest"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
