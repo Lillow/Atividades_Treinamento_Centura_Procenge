@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="a880f689-f050-49a1-9e38-433e271ceb46" activeEnvironment="Default" name="wsClientes_Curso" resourceRoot="" soapui-version="5.6.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="4ca91b6b-0eb7-4726-a7b4-ef1ef0052ad4" wsaVersion="NONE" name="wsCLIENTES_CURSOSoap" type="wsdl" bindingName="{pir360}wsCLIENTES_CURSOSoap" soapVersion="1_1" anonymous="optional" definition="http://localhost/Desenv_Aluno02/wsCLIENTES_CURSO.asmx?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost/Desenv_Aluno02/wsCLIENTES_CURSO.asmx?wsdl"><con:part><con:url>http://localhost/Desenv_Aluno02/wsCLIENTES_CURSO.asmx?wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="pir360" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="pir360" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="pir360">
+      <s:element name="Consultar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Filtro" type="tns:fcCLIENTES_CURSO_filtro"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="fcCLIENTES_CURSO_filtro">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:SalFunctionalClass">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="CODIGO" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="NOME" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="COD_MUNICIPIO_FAT" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="PESSOA" type="s:string"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="SalFunctionalClass"/>
+      <s:complexType name="fcCLIENTES_CURSO_dados">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:SalFunctionalClass">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="CODIGO" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="NOME" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="AREA" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="BAIRRO_FAT" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="COD_MUNICIPIO_FAT" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="PESSOA" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="DATA_CAD" type="s:string"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="ConsultarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultarResult" type="tns:ArrayOfFcCLIENTES_CURSO_dados"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfFcCLIENTES_CURSO_dados">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="fcCLIENTES_CURSO_dados" nillable="true" type="tns:fcCLIENTES_CURSO_dados"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Alterar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Cliente" type="tns:fcCLIENTES_CURSO_dados"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AlterarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AlterarResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Incluir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Cliente" type="tns:fcCLIENTES_CURSO_dados"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IncluirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IncluirResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Excluir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Cliente" type="tns:fcCLIENTES_CURSO_dados"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcluirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExcluirResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ConsultarSoapIn">
+    <wsdl:part name="parameters" element="tns:Consultar"/>
+  </wsdl:message>
+  <wsdl:message name="ConsultarSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultarResponse"/>
+  </wsdl:message>
+  <wsdl:message name="AlterarSoapIn">
+    <wsdl:part name="parameters" element="tns:Alterar"/>
+  </wsdl:message>
+  <wsdl:message name="AlterarSoapOut">
+    <wsdl:part name="parameters" element="tns:AlterarResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IncluirSoapIn">
+    <wsdl:part name="parameters" element="tns:Incluir"/>
+  </wsdl:message>
+  <wsdl:message name="IncluirSoapOut">
+    <wsdl:part name="parameters" element="tns:IncluirResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ExcluirSoapIn">
+    <wsdl:part name="parameters" element="tns:Excluir"/>
+  </wsdl:message>
+  <wsdl:message name="ExcluirSoapOut">
+    <wsdl:part name="parameters" element="tns:ExcluirResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="wsCLIENTES_CURSOSoap">
+    <wsdl:operation name="Consultar">
+      <wsdl:input message="tns:ConsultarSoapIn"/>
+      <wsdl:output message="tns:ConsultarSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Alterar">
+      <wsdl:input message="tns:AlterarSoapIn"/>
+      <wsdl:output message="tns:AlterarSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Incluir">
+      <wsdl:input message="tns:IncluirSoapIn"/>
+      <wsdl:output message="tns:IncluirSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Excluir">
+      <wsdl:input message="tns:ExcluirSoapIn"/>
+      <wsdl:output message="tns:ExcluirSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsCLIENTES_CURSOSoap" type="tns:wsCLIENTES_CURSOSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Consultar">
+      <soap:operation soapAction="pir360/Consultar" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Alterar">
+      <soap:operation soapAction="pir360/Alterar" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Incluir">
+      <soap:operation soapAction="pir360/Incluir" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Excluir">
+      <soap:operation soapAction="pir360/Excluir" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsCLIENTES_CURSOSoap12" type="tns:wsCLIENTES_CURSOSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Consultar">
+      <soap12:operation soapAction="pir360/Consultar" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Alterar">
+      <soap12:operation soapAction="pir360/Alterar" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Incluir">
+      <soap12:operation soapAction="pir360/Incluir" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Excluir">
+      <soap12:operation soapAction="pir360/Excluir" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsCLIENTES_CURSO">
+    <wsdl:port name="wsCLIENTES_CURSOSoap" binding="tns:wsCLIENTES_CURSOSoap">
+      <soap:address location="http://localhost/Desenv_Aluno02/wsCLIENTES_CURSO.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="wsCLIENTES_CURSOSoap12" binding="tns:wsCLIENTES_CURSOSoap12">
+      <soap12:address location="http://localhost/Desenv_Aluno02/wsCLIENTES_CURSO.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost/Desenv_Aluno02/wsCLIENTES_CURSO.asmx</con:endpoint></con:endpoints><con:operation id="dccd5bd0-fc42-421a-bcca-d5d507166749" isOneWay="false" action="pir360/Alterar" name="Alterar" bindingOperationName="Alterar" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="140924ba-b51b-4bd0-8a4a-de3d9ee6904a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsCLIENTES_CURSO.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:Alterar>\r
+         <!--Optional:-->\r
+         <pir:Cliente>\r
+            <!--Optional:-->\r
+            <pir:CODIGO>?</pir:CODIGO>\r
+            <!--Optional:-->\r
+            <pir:NOME>?</pir:NOME>\r
+            <!--Optional:-->\r
+            <pir:AREA>?</pir:AREA>\r
+            <!--Optional:-->\r
+            <pir:BAIRRO_FAT>?</pir:BAIRRO_FAT>\r
+            <!--Optional:-->\r
+            <pir:COD_MUNICIPIO_FAT>?</pir:COD_MUNICIPIO_FAT>\r
+            <!--Optional:-->\r
+            <pir:PESSOA>?</pir:PESSOA>\r
+            <!--Optional:-->\r
+            <pir:DATA_CAD>?</pir:DATA_CAD>\r
+         </pir:Cliente>\r
+      </pir:Alterar>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/Alterar"/></con:call></con:operation><con:operation id="3b294fe8-54ae-4d17-b338-976bc9aa5b19" isOneWay="false" action="pir360/Consultar" name="Consultar" bindingOperationName="Consultar" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a60c0678-8aba-469d-9707-622a105fdf82" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsCLIENTES_CURSO.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:Consultar>\r
+         <!--Optional:-->\r
+         <pir:Filtro>\r
+            <!--Optional:-->\r
+            <pir:CODIGO>16327</pir:CODIGO>\r
+            <!--Optional:-->\r
+            <pir:NOME></pir:NOME>\r
+            <!--Optional:-->\r
+            <pir:COD_MUNICIPIO_FAT></pir:COD_MUNICIPIO_FAT>\r
+            <!--Optional:-->\r
+            <pir:PESSOA></pir:PESSOA>\r
+         </pir:Filtro>\r
+      </pir:Consultar>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/Consultar"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="305c8c87-2eec-4b90-a26b-b53e6813158c" isOneWay="false" action="pir360/Excluir" name="Excluir" bindingOperationName="Excluir" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5031e2ff-e8aa-44e5-8f47-cce0f004f04e" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsCLIENTES_CURSO.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:Excluir>\r
+         <!--Optional:-->\r
+         <pir:Cliente>\r
+            <!--Optional:-->\r
+            <pir:CODIGO>16327</pir:CODIGO>\r
+            <!--Optional:-->\r
+            <pir:NOME></pir:NOME>\r
+            <!--Optional:-->\r
+            <pir:AREA></pir:AREA>\r
+            <!--Optional:-->\r
+            <pir:BAIRRO_FAT></pir:BAIRRO_FAT>\r
+            <!--Optional:-->\r
+            <pir:COD_MUNICIPIO_FAT></pir:COD_MUNICIPIO_FAT>\r
+            <!--Optional:-->\r
+            <pir:PESSOA></pir:PESSOA>\r
+            <!--Optional:-->\r
+            <pir:DATA_CAD></pir:DATA_CAD>\r
+         </pir:Cliente>\r
+      </pir:Excluir>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/Excluir"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="a6ec7ea1-39e5-48b0-b7b7-2e2fbb1c78f8" isOneWay="false" action="pir360/Incluir" name="Incluir" bindingOperationName="Incluir" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="2c1ec77a-3b42-4b3e-82b5-78bf75f227b1" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsCLIENTES_CURSO.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:Incluir>\r
+         <!--Optional:-->\r
+         <pir:Cliente>\r
+            <!--Optional:-->\r
+            <pir:CODIGO>16327</pir:CODIGO>\r
+            <!--Optional:-->\r
+            <pir:NOME>teste 12</pir:NOME>\r
+            <!--Optional:-->\r
+            <pir:AREA>0002</pir:AREA>\r
+            <!--Optional:-->\r
+            <pir:BAIRRO_FAT>UR-11</pir:BAIRRO_FAT>\r
+            <!--Optional:-->\r
+            <pir:COD_MUNICIPIO_FAT>2413300</pir:COD_MUNICIPIO_FAT>\r
+            <!--Optional:-->\r
+            <pir:PESSOA>J</pir:PESSOA>\r
+            <!--Optional:-->\r
+            <pir:DATA_CAD></pir:DATA_CAD>\r
+         </pir:Cliente>\r
+      </pir:Incluir>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/Incluir"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="d4967fbe-f100-4e71-bedb-73f5ca003bbd" wsaVersion="NONE" name="wsCLIENTES_CURSOSoap12" type="wsdl" bindingName="{pir360}wsCLIENTES_CURSOSoap12" soapVersion="1_2" anonymous="optional" definition="http://localhost/Desenv_Aluno02/wsCLIENTES_CURSO.asmx?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost/Desenv_Aluno02/wsCLIENTES_CURSO.asmx?wsdl"><con:part><con:url>http://localhost/Desenv_Aluno02/wsCLIENTES_CURSO.asmx?wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="pir360" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="pir360" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="pir360">
+      <s:element name="Consultar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Filtro" type="tns:fcCLIENTES_CURSO_filtro"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="fcCLIENTES_CURSO_filtro">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:SalFunctionalClass">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="CODIGO" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="NOME" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="COD_MUNICIPIO_FAT" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="PESSOA" type="s:string"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="SalFunctionalClass"/>
+      <s:complexType name="fcCLIENTES_CURSO_dados">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:SalFunctionalClass">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="CODIGO" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="NOME" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="AREA" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="BAIRRO_FAT" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="COD_MUNICIPIO_FAT" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="PESSOA" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="DATA_CAD" type="s:string"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="ConsultarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultarResult" type="tns:ArrayOfFcCLIENTES_CURSO_dados"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfFcCLIENTES_CURSO_dados">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="fcCLIENTES_CURSO_dados" nillable="true" type="tns:fcCLIENTES_CURSO_dados"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Alterar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Cliente" type="tns:fcCLIENTES_CURSO_dados"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AlterarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AlterarResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Incluir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Cliente" type="tns:fcCLIENTES_CURSO_dados"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IncluirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IncluirResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Excluir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Cliente" type="tns:fcCLIENTES_CURSO_dados"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcluirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExcluirResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ConsultarSoapIn">
+    <wsdl:part name="parameters" element="tns:Consultar"/>
+  </wsdl:message>
+  <wsdl:message name="ConsultarSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultarResponse"/>
+  </wsdl:message>
+  <wsdl:message name="AlterarSoapIn">
+    <wsdl:part name="parameters" element="tns:Alterar"/>
+  </wsdl:message>
+  <wsdl:message name="AlterarSoapOut">
+    <wsdl:part name="parameters" element="tns:AlterarResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IncluirSoapIn">
+    <wsdl:part name="parameters" element="tns:Incluir"/>
+  </wsdl:message>
+  <wsdl:message name="IncluirSoapOut">
+    <wsdl:part name="parameters" element="tns:IncluirResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ExcluirSoapIn">
+    <wsdl:part name="parameters" element="tns:Excluir"/>
+  </wsdl:message>
+  <wsdl:message name="ExcluirSoapOut">
+    <wsdl:part name="parameters" element="tns:ExcluirResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="wsCLIENTES_CURSOSoap">
+    <wsdl:operation name="Consultar">
+      <wsdl:input message="tns:ConsultarSoapIn"/>
+      <wsdl:output message="tns:ConsultarSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Alterar">
+      <wsdl:input message="tns:AlterarSoapIn"/>
+      <wsdl:output message="tns:AlterarSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Incluir">
+      <wsdl:input message="tns:IncluirSoapIn"/>
+      <wsdl:output message="tns:IncluirSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Excluir">
+      <wsdl:input message="tns:ExcluirSoapIn"/>
+      <wsdl:output message="tns:ExcluirSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsCLIENTES_CURSOSoap" type="tns:wsCLIENTES_CURSOSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Consultar">
+      <soap:operation soapAction="pir360/Consultar" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Alterar">
+      <soap:operation soapAction="pir360/Alterar" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Incluir">
+      <soap:operation soapAction="pir360/Incluir" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Excluir">
+      <soap:operation soapAction="pir360/Excluir" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsCLIENTES_CURSOSoap12" type="tns:wsCLIENTES_CURSOSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Consultar">
+      <soap12:operation soapAction="pir360/Consultar" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Alterar">
+      <soap12:operation soapAction="pir360/Alterar" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Incluir">
+      <soap12:operation soapAction="pir360/Incluir" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Excluir">
+      <soap12:operation soapAction="pir360/Excluir" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsCLIENTES_CURSO">
+    <wsdl:port name="wsCLIENTES_CURSOSoap" binding="tns:wsCLIENTES_CURSOSoap">
+      <soap:address location="http://localhost/Desenv_Aluno02/wsCLIENTES_CURSO.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="wsCLIENTES_CURSOSoap12" binding="tns:wsCLIENTES_CURSOSoap12">
+      <soap12:address location="http://localhost/Desenv_Aluno02/wsCLIENTES_CURSO.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost/Desenv_Aluno02/wsCLIENTES_CURSO.asmx</con:endpoint></con:endpoints><con:operation id="366cacd8-4259-40c6-97e9-3ced61855ebe" isOneWay="false" action="pir360/Alterar" name="Alterar" bindingOperationName="Alterar" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b9ebdddc-2988-4b2a-bd7a-606b4793727c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsCLIENTES_CURSO.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:Alterar>\r
+         <!--Optional:-->\r
+         <pir:Cliente>\r
+            <!--Optional:-->\r
+            <pir:CODIGO>?</pir:CODIGO>\r
+            <!--Optional:-->\r
+            <pir:NOME>?</pir:NOME>\r
+            <!--Optional:-->\r
+            <pir:AREA>?</pir:AREA>\r
+            <!--Optional:-->\r
+            <pir:BAIRRO_FAT>?</pir:BAIRRO_FAT>\r
+            <!--Optional:-->\r
+            <pir:COD_MUNICIPIO_FAT>?</pir:COD_MUNICIPIO_FAT>\r
+            <!--Optional:-->\r
+            <pir:PESSOA>?</pir:PESSOA>\r
+            <!--Optional:-->\r
+            <pir:DATA_CAD>?</pir:DATA_CAD>\r
+         </pir:Cliente>\r
+      </pir:Alterar>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/wsCLIENTES_CURSOSoap/AlterarRequest"/></con:call></con:operation><con:operation id="3cb7ff21-4df0-495f-81f2-1a2b97597fa4" isOneWay="false" action="pir360/Consultar" name="Consultar" bindingOperationName="Consultar" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7d51ccc8-48dd-4c51-b10c-9993a75f8484" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsCLIENTES_CURSO.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:Consultar>\r
+         <!--Optional:-->\r
+         <pir:Filtro>\r
+            <!--Optional:-->\r
+            <pir:CODIGO>?</pir:CODIGO>\r
+            <!--Optional:-->\r
+            <pir:NOME>?</pir:NOME>\r
+            <!--Optional:-->\r
+            <pir:COD_MUNICIPIO_FAT>?</pir:COD_MUNICIPIO_FAT>\r
+            <!--Optional:-->\r
+            <pir:PESSOA>?</pir:PESSOA>\r
+         </pir:Filtro>\r
+      </pir:Consultar>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/wsCLIENTES_CURSOSoap/ConsultarRequest"/></con:call></con:operation><con:operation id="2cb393fa-9285-4654-8671-915822b9342f" isOneWay="false" action="pir360/Excluir" name="Excluir" bindingOperationName="Excluir" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b0c8fe01-4d75-4f79-a3b6-986f72c6016c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsCLIENTES_CURSO.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:Excluir>\r
+         <!--Optional:-->\r
+         <pir:Cliente>\r
+            <!--Optional:-->\r
+            <pir:CODIGO>?</pir:CODIGO>\r
+            <!--Optional:-->\r
+            <pir:NOME>?</pir:NOME>\r
+            <!--Optional:-->\r
+            <pir:AREA>?</pir:AREA>\r
+            <!--Optional:-->\r
+            <pir:BAIRRO_FAT>?</pir:BAIRRO_FAT>\r
+            <!--Optional:-->\r
+            <pir:COD_MUNICIPIO_FAT>?</pir:COD_MUNICIPIO_FAT>\r
+            <!--Optional:-->\r
+            <pir:PESSOA>?</pir:PESSOA>\r
+            <!--Optional:-->\r
+            <pir:DATA_CAD>?</pir:DATA_CAD>\r
+         </pir:Cliente>\r
+      </pir:Excluir>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/wsCLIENTES_CURSOSoap/ExcluirRequest"/></con:call></con:operation><con:operation id="ea54b4e7-b0c2-4d99-a6f2-b2f60b71d104" isOneWay="false" action="pir360/Incluir" name="Incluir" bindingOperationName="Incluir" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="8d32e9c9-24dd-4bf5-950d-23ebb047ea62" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsCLIENTES_CURSO.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:Incluir>\r
+         <!--Optional:-->\r
+         <pir:Cliente>\r
+            <!--Optional:-->\r
+            <pir:CODIGO>?</pir:CODIGO>\r
+            <!--Optional:-->\r
+            <pir:NOME>?</pir:NOME>\r
+            <!--Optional:-->\r
+            <pir:AREA>?</pir:AREA>\r
+            <!--Optional:-->\r
+            <pir:BAIRRO_FAT>?</pir:BAIRRO_FAT>\r
+            <!--Optional:-->\r
+            <pir:COD_MUNICIPIO_FAT>?</pir:COD_MUNICIPIO_FAT>\r
+            <!--Optional:-->\r
+            <pir:PESSOA>?</pir:PESSOA>\r
+            <!--Optional:-->\r
+            <pir:DATA_CAD>?</pir:DATA_CAD>\r
+         </pir:Cliente>\r
+      </pir:Incluir>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/wsCLIENTES_CURSOSoap/IncluirRequest"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
