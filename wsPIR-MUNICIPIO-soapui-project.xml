@@ -262,7 +262,7 @@
          <!--Optional:-->\r
          <pir:cabecalho>\r
             <!--Optional:-->\r
-            <pir:token>F34137C8683245B3E0530FD4210A783E</pir:token>\r
+            <pir:token>F34693987BAC575CE0530FD4210A39F4</pir:token>\r
             <!--Optional:-->\r
             <pir:empresa>001</pir:empresa>\r
          </pir:cabecalho>\r
@@ -338,7 +338,7 @@
          <!--Optional:-->\r
          <pir:cabecalho>\r
             <!--Optional:-->\r
-            <pir:token>F34137C8683245B3E0530FD4210A783E</pir:token>\r
+            <pir:token>F34693987BAC575CE0530FD4210A39F4</pir:token>\r
             <!--Optional:-->\r
             <pir:empresa>001</pir:empresa>\r
          </pir:cabecalho>\r
@@ -347,19 +347,19 @@
             <!--Optional:-->\r
             <pir:COD_MUNICIPIO>2700201</pir:COD_MUNICIPIO>\r
             <!--Optional:-->\r
-            <pir:DSC_MUNICIPIO></pir:DSC_MUNICIPIO>\r
+            <pir:DSC_MUNICIPIO>ANADIA</pir:DSC_MUNICIPIO>\r
             <!--Optional:-->\r
             <pir:COD_UF>PE</pir:COD_UF>\r
             <!--Optional:-->\r
             <pir:COD_AREA></pir:COD_AREA>\r
             <!--Optional:-->\r
-            <pir:IND_UTILIZA_DIPAMB></pir:IND_UTILIZA_DIPAMB>\r
+            <pir:IND_UTILIZA_DIPAMB>S</pir:IND_UTILIZA_DIPAMB>\r
             <!--Optional:-->\r
-            <pir:IND_CAPITAL></pir:IND_CAPITAL>\r
+            <pir:IND_CAPITAL>N</pir:IND_CAPITAL>\r
             <!--Optional:-->\r
-            <pir:COD_PAIS></pir:COD_PAIS>\r
+            <pir:COD_PAIS>01058</pir:COD_PAIS>\r
             <!--Optional:-->\r
-            <pir:COD_MUNICIPIO_IBGE></pir:COD_MUNICIPIO_IBGE>\r
+            <pir:COD_MUNICIPIO_IBGE>2700201</pir:COD_MUNICIPIO_IBGE>\r
             <!--Optional:-->\r
             <pir:COD_FORNEC></pir:COD_FORNEC>\r
             <!--Optional:-->\r
@@ -367,13 +367,13 @@
             <!--Optional:-->\r
             <pir:COD_MUNICIPIO_ANP></pir:COD_MUNICIPIO_ANP>\r
             <!--Optional:-->\r
-            <pir:VAL_EST_HOSPEDAGEM></pir:VAL_EST_HOSPEDAGEM>\r
+            <pir:VAL_EST_HOSPEDAGEM>0</pir:VAL_EST_HOSPEDAGEM>\r
             <!--Optional:-->\r
-            <pir:IND_PROCESSO_VIAGEM></pir:IND_PROCESSO_VIAGEM>\r
+            <pir:IND_PROCESSO_VIAGEM>N</pir:IND_PROCESSO_VIAGEM>\r
             <!--Optional:-->\r
-            <pir:COD_MUNICIPIO_SIAFI></pir:COD_MUNICIPIO_SIAFI>\r
+            <pir:COD_MUNICIPIO_SIAFI>2703</pir:COD_MUNICIPIO_SIAFI>\r
             <!--Optional:-->\r
-            <pir:DAT_ALTERACAO_REGISTRO></pir:DAT_ALTERACAO_REGISTRO>\r
+            <pir:DAT_ALTERACAO_REGISTRO>2021/06/30 17:50:36</pir:DAT_ALTERACAO_REGISTRO>\r
             <!--Optional:-->\r
             <pir:COD_GRUPO_ATRIBUTO></pir:COD_GRUPO_ATRIBUTO>\r
          </pir:poPIR_MUNICIPIO>\r
@@ -558,4 +558,4 @@
          </pir:oFiltro>\r
       </pir:Consultar>\r
    </soap:Body>\r
-</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="Pir360/wsPIR_MUNICIPIOSoap/ConsultarRequest"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="Pir360/wsPIR_MUNICIPIOSoap/ConsultarRequest"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

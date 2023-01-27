@@ -1,1 +1,0 @@
-<%@ WebService Class="pir360.wsMenu" %>

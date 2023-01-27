@@ -1,1 +1,0 @@
-<%@ WebService Class="Pir360.wsLANCAMENTO" %>
