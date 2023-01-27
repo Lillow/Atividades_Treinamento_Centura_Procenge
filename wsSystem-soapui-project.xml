@@ -1,0 +1,1918 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="06d6fc4e-db53-47f2-8ad3-5b6904fbae47" activeEnvironment="Default" name="wsSystem" resourceRoot="" soapui-version="5.6.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="f91487fc-ed56-4494-b66d-23722724ef78" wsaVersion="NONE" name="wsSystemSoap" type="wsdl" bindingName="{pir360}wsSystemSoap" soapVersion="1_1" anonymous="optional" definition="http://localhost/Desenv_Aluno02/wsSystem.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint></con:endpoints><con:operation id="5689dd82-2c00-4b5a-8765-433b10f30a07" isOneWay="false" action="pir360/Autenticar" name="Autenticar" bindingOperationName="Autenticar" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="966ff667-d3fd-4076-b400-3e4e589b9cd3" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:Autenticar>\r
+         <!--Optional:-->\r
+         <pir:poAutenticar>\r
+            <!--Optional:-->\r
+            <pir:LOGIN>piramide</pir:LOGIN>\r
+            <!--Optional:-->\r
+            <pir:SENHA>piramide</pir:SENHA>\r
+            <!--Optional:-->\r
+            <pir:APLICACAO>pir360</pir:APLICACAO>\r
+            <!--Optional:-->\r
+            <pir:VERSAO>21</pir:VERSAO>\r
+         </pir:poAutenticar>\r
+      </pir:Autenticar>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/Autenticar"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="e66ccb0a-99ae-4295-80e3-0f031eb52c2e" isOneWay="false" action="pir360/AutenticarHubtool" name="AutenticarHubtool" bindingOperationName="AutenticarHubtool" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b5ea3d57-6014-438d-8542-989bc38411df" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:AutenticarHubtool>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+      </pir:AutenticarHubtool>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/AutenticarHubtool"/></con:call></con:operation><con:operation id="b18d8bc8-9352-4fe5-a83e-6ce1c51c7bb9" isOneWay="false" action="pir360/DireitosDefault" name="DireitosDefault" bindingOperationName="DireitosDefault" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ee84f217-3acf-404b-a477-238dee6b513e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:DireitosDefault>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:oFiltro>\r
+            <!--Optional:-->\r
+            <pir:psEmpresa>?</pir:psEmpresa>\r
+            <!--Optional:-->\r
+            <pir:psUsuario>?</pir:psUsuario>\r
+            <!--Optional:-->\r
+            <pir:psDireito>?</pir:psDireito>\r
+            <!--Optional:-->\r
+            <pir:psOrigem>?</pir:psOrigem>\r
+         </pir:oFiltro>\r
+      </pir:DireitosDefault>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/DireitosDefault"/></con:call></con:operation><con:operation id="ad53646e-258d-4aad-8252-2ee772712e3c" isOneWay="false" action="pir360/DireitosEmpresa" name="DireitosEmpresa" bindingOperationName="DireitosEmpresa" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5f231390-7026-4745-bb14-49e027baf9e3" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:DireitosEmpresa>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:oFiltro>\r
+            <!--Optional:-->\r
+            <pir:psEmpresa>?</pir:psEmpresa>\r
+            <!--Optional:-->\r
+            <pir:psUsuario>?</pir:psUsuario>\r
+            <!--Optional:-->\r
+            <pir:psDireito>?</pir:psDireito>\r
+            <!--Optional:-->\r
+            <pir:psOrigem>?</pir:psOrigem>\r
+         </pir:oFiltro>\r
+      </pir:DireitosEmpresa>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/DireitosEmpresa"/></con:call></con:operation><con:operation id="f11f7fd5-38c3-4367-9ced-2c86cda77d8b" isOneWay="false" action="pir360/DireitosOrigem" name="DireitosOrigem" bindingOperationName="DireitosOrigem" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="71e5c47d-bd5b-4fe6-b511-3a56e814f1b5" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:DireitosOrigem>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:oFiltro>\r
+            <!--Optional:-->\r
+            <pir:psEmpresa>?</pir:psEmpresa>\r
+            <!--Optional:-->\r
+            <pir:psUsuario>?</pir:psUsuario>\r
+            <!--Optional:-->\r
+            <pir:psDireito>?</pir:psDireito>\r
+            <!--Optional:-->\r
+            <pir:psOrigem>?</pir:psOrigem>\r
+         </pir:oFiltro>\r
+      </pir:DireitosOrigem>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/DireitosOrigem"/></con:call></con:operation><con:operation id="5920687f-8509-4ca5-8346-ae76e0cf5a3a" isOneWay="false" action="pir360/DireitosUsuario" name="DireitosUsuario" bindingOperationName="DireitosUsuario" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7bc0aab3-665c-481c-a974-6a4032abb20d" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:DireitosUsuario>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:oFiltro>\r
+            <!--Optional:-->\r
+            <pir:psEmpresa>?</pir:psEmpresa>\r
+            <!--Optional:-->\r
+            <pir:psUsuario>?</pir:psUsuario>\r
+            <!--Optional:-->\r
+            <pir:psDireito>?</pir:psDireito>\r
+            <!--Optional:-->\r
+            <pir:psOrigem>?</pir:psOrigem>\r
+         </pir:oFiltro>\r
+      </pir:DireitosUsuario>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/DireitosUsuario"/></con:call></con:operation><con:operation id="e2394777-f3ca-4bef-aba2-14d9453e1d31" isOneWay="false" action="pir360/ObtemAplicacoesHubtool" name="ObtemAplicacoesHubtool" bindingOperationName="ObtemAplicacoesHubtool" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f378668e-bf37-4172-b37d-58eeea23ebe9" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:ObtemAplicacoesHubtool>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+      </pir:ObtemAplicacoesHubtool>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/ObtemAplicacoesHubtool"/></con:call></con:operation><con:operation id="16353830-0017-470e-96c7-18c6c151cb7e" isOneWay="false" action="pir360/ObtemParametro" name="ObtemParametro" bindingOperationName="ObtemParametro" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f3ab24d0-0246-40fa-8626-08fbf9f0cef5" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:ObtemParametro>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:oFiltro>\r
+            <!--Optional:-->\r
+            <pir:NOME>?</pir:NOME>\r
+            <!--Optional:-->\r
+            <pir:VALOR>?</pir:VALOR>\r
+         </pir:oFiltro>\r
+      </pir:ObtemParametro>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/ObtemParametro"/></con:call></con:operation><con:operation id="2f5bbf9a-5df4-4b50-976b-2bd7d236f4c0" isOneWay="false" action="pir360/ObtemParametroAlgumaEmpresaMarcada" name="ObtemParametroAlgumaEmpresaMarcada" bindingOperationName="ObtemParametroAlgumaEmpresaMarcada" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="afe33944-d7d4-49c5-bb4d-a8c2b7995824" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:ObtemParametroAlgumaEmpresaMarcada>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:oFiltro>\r
+            <!--Optional:-->\r
+            <pir:EMPRESA>?</pir:EMPRESA>\r
+            <!--Optional:-->\r
+            <pir:NOME>?</pir:NOME>\r
+            <!--Optional:-->\r
+            <pir:VALOR>?</pir:VALOR>\r
+         </pir:oFiltro>\r
+      </pir:ObtemParametroAlgumaEmpresaMarcada>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/ObtemParametroAlgumaEmpresaMarcada"/></con:call></con:operation><con:operation id="f6c69936-3256-4431-85bb-e7e69e62d81d" isOneWay="false" action="pir360/ObtemParametroEmpresa" name="ObtemParametroEmpresa" bindingOperationName="ObtemParametroEmpresa" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="03ba489a-db04-4ce2-8490-cfc0fe66f00e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:ObtemParametroEmpresa>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:oFiltro>\r
+            <!--Optional:-->\r
+            <pir:EMPRESA>?</pir:EMPRESA>\r
+            <!--Optional:-->\r
+            <pir:NOME>?</pir:NOME>\r
+            <!--Optional:-->\r
+            <pir:VALOR>?</pir:VALOR>\r
+         </pir:oFiltro>\r
+      </pir:ObtemParametroEmpresa>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/ObtemParametroEmpresa"/></con:call></con:operation><con:operation id="bc6c01c2-485a-4aa6-be50-ecd35f10fd75" isOneWay="false" action="pir360/ObtemParametroEmpresaL" name="ObtemParametroEmpresaL" bindingOperationName="ObtemParametroEmpresaL" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d035c459-7057-4b78-b326-69ea4e1a1d4a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:ObtemParametroEmpresaL>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:oFiltro>\r
+            <!--Optional:-->\r
+            <pir:EMPRESA>?</pir:EMPRESA>\r
+            <!--Optional:-->\r
+            <pir:NOME>?</pir:NOME>\r
+            <!--Optional:-->\r
+            <pir:VALOR>?</pir:VALOR>\r
+         </pir:oFiltro>\r
+      </pir:ObtemParametroEmpresaL>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/ObtemParametroEmpresaL"/></con:call></con:operation><con:operation id="0719bfc2-5c22-4bbc-b47c-357fc9bb8e54" isOneWay="false" action="pir360/ObtemParametroL" name="ObtemParametroL" bindingOperationName="ObtemParametroL" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="41f5072e-d66d-4f52-9cc2-b5e81944875c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:ObtemParametroL>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:oFiltro>\r
+            <!--Optional:-->\r
+            <pir:NOME>?</pir:NOME>\r
+            <!--Optional:-->\r
+            <pir:VALOR>?</pir:VALOR>\r
+         </pir:oFiltro>\r
+      </pir:ObtemParametroL>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/ObtemParametroL"/></con:call></con:operation><con:operation id="8064955b-bbb4-4aea-96b3-388f42b3b261" isOneWay="false" action="pir360/ObtemParametrosEmpresa" name="ObtemParametrosEmpresa" bindingOperationName="ObtemParametrosEmpresa" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d645eb20-68c4-470e-8d89-7b59d785ad2f" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:ObtemParametrosEmpresa>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:oFiltros>\r
+            <!--Zero or more repetitions:-->\r
+            <pir:cParametroEmpresa>\r
+               <!--Optional:-->\r
+               <pir:EMPRESA>?</pir:EMPRESA>\r
+               <!--Optional:-->\r
+               <pir:NOME>?</pir:NOME>\r
+               <!--Optional:-->\r
+               <pir:VALOR>?</pir:VALOR>\r
+            </pir:cParametroEmpresa>\r
+         </pir:oFiltros>\r
+      </pir:ObtemParametrosEmpresa>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/ObtemParametrosEmpresa"/></con:call></con:operation><con:operation id="d034ebdf-0fbe-4d9d-8886-04e8912eed60" isOneWay="false" action="pir360/ObtemParametrosEmpresaFaturamento" name="ObtemParametrosEmpresaFaturamento" bindingOperationName="ObtemParametrosEmpresaFaturamento" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d436884a-bf48-46ef-952f-7e38c2be2a62" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:ObtemParametrosEmpresaFaturamento>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:oFiltros>\r
+            <!--Zero or more repetitions:-->\r
+            <pir:cParametroEmpresa>\r
+               <!--Optional:-->\r
+               <pir:EMPRESA>?</pir:EMPRESA>\r
+               <!--Optional:-->\r
+               <pir:NOME>?</pir:NOME>\r
+               <!--Optional:-->\r
+               <pir:VALOR>?</pir:VALOR>\r
+            </pir:cParametroEmpresa>\r
+         </pir:oFiltros>\r
+      </pir:ObtemParametrosEmpresaFaturamento>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/ObtemParametrosEmpresaFaturamento"/></con:call></con:operation><con:operation id="9eb8f145-eb9c-4748-b7b9-5809a4051c14" isOneWay="false" action="pir360/ObtemRelatorio" name="ObtemRelatorio" bindingOperationName="ObtemRelatorio" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d87cc3f9-0611-4d4a-875d-b86d537fbbb0" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:ObtemRelatorio>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:poFiltro>\r
+            <!--Optional:-->\r
+            <pir:COD_RELATORIO>?</pir:COD_RELATORIO>\r
+         </pir:poFiltro>\r
+      </pir:ObtemRelatorio>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/ObtemRelatorio"/></con:call></con:operation><con:operation id="9d158e5e-2276-43d2-b791-dd72b65bafef" isOneWay="false" action="pir360/ResetRelatorio" name="ResetRelatorio" bindingOperationName="ResetRelatorio" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="2c88cd3a-a313-4a10-9244-c413571b3ce0" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:ResetRelatorio>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:poRelatorio>\r
+            <!--Optional:-->\r
+            <pir:COD_RELATORIO>?</pir:COD_RELATORIO>\r
+            <!--Optional:-->\r
+            <pir:RELATORIO>?</pir:RELATORIO>\r
+            <!--Optional:-->\r
+            <pir:NOM_RELATORIO>?</pir:NOM_RELATORIO>\r
+            <!--Optional:-->\r
+            <pir:NOM_TEMPLATE>?</pir:NOM_TEMPLATE>\r
+         </pir:poRelatorio>\r
+      </pir:ResetRelatorio>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/ResetRelatorio"/></con:call></con:operation><con:operation id="1e793ee2-d11f-4a14-bd4f-dba127ef4ce0" isOneWay="false" action="pir360/SalvarRelatorio" name="SalvarRelatorio" bindingOperationName="SalvarRelatorio" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c4007370-ec62-40a3-aae7-a4a9e4e05d40" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:SalvarRelatorio>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:poRelatorio>\r
+            <!--Optional:-->\r
+            <pir:COD_RELATORIO>?</pir:COD_RELATORIO>\r
+            <!--Optional:-->\r
+            <pir:RELATORIO>?</pir:RELATORIO>\r
+            <!--Optional:-->\r
+            <pir:NOM_RELATORIO>?</pir:NOM_RELATORIO>\r
+            <!--Optional:-->\r
+            <pir:NOM_TEMPLATE>?</pir:NOM_TEMPLATE>\r
+         </pir:poRelatorio>\r
+      </pir:SalvarRelatorio>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/SalvarRelatorio"/></con:call></con:operation><con:operation id="62546f73-488c-4958-8343-e1e885c46d21" isOneWay="false" action="pir360/UpdateEmpresaParametro" name="UpdateEmpresaParametro" bindingOperationName="UpdateEmpresaParametro" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="cc418c63-70d2-4838-83be-d2533d21018e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:UpdateEmpresaParametro>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:oDados>\r
+            <!--Optional:-->\r
+            <pir:EMPRESA>?</pir:EMPRESA>\r
+            <!--Optional:-->\r
+            <pir:NOME>?</pir:NOME>\r
+            <!--Optional:-->\r
+            <pir:VALOR>?</pir:VALOR>\r
+         </pir:oDados>\r
+      </pir:UpdateEmpresaParametro>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/UpdateEmpresaParametro"/></con:call></con:operation><con:operation id="aa78ac4d-56bb-4da7-b94b-b0c5d133ee11" isOneWay="false" action="pir360/UpdateParametro" name="UpdateParametro" bindingOperationName="UpdateParametro" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="2bc97692-5fa3-4368-896b-3540222d0877" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:UpdateParametro>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:oDados>\r
+            <!--Optional:-->\r
+            <pir:NOME>?</pir:NOME>\r
+            <!--Optional:-->\r
+            <pir:VALOR>?</pir:VALOR>\r
+         </pir:oDados>\r
+      </pir:UpdateParametro>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/UpdateParametro"/></con:call></con:operation><con:operation id="583eae86-8c8f-4b33-9541-5823de7bb065" isOneWay="false" action="pir360/ValidarToken" name="ValidarToken" bindingOperationName="ValidarToken" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="dc43bcc1-d3fd-4b9f-bcb7-5516cabd56a2" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:ValidarToken>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+      </pir:ValidarToken>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/ValidarToken"/></con:call></con:operation><con:operation id="d5e9b965-e297-426d-ba04-b618ce44fd80" isOneWay="false" action="pir360/ValidarUsuarioDireitoPerfil" name="ValidarUsuarioDireitoPerfil" bindingOperationName="ValidarUsuarioDireitoPerfil" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="44ef7df3-4c46-4704-a440-1f6119d4ba69" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:ValidarUsuarioDireitoPerfil>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:poAutenticar>\r
+            <!--Optional:-->\r
+            <pir:LOGIN>?</pir:LOGIN>\r
+            <!--Optional:-->\r
+            <pir:SENHA>?</pir:SENHA>\r
+            <!--Optional:-->\r
+            <pir:APLICACAO>?</pir:APLICACAO>\r
+            <!--Optional:-->\r
+            <pir:VERSAO>?</pir:VERSAO>\r
+         </pir:poAutenticar>\r
+         <!--Optional:-->\r
+         <pir:psDireito>?</pir:psDireito>\r
+      </pir:ValidarUsuarioDireitoPerfil>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/ValidarUsuarioDireitoPerfil"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="f0f16619-9750-45c4-8fa1-9aaad312d1ae" wsaVersion="NONE" name="wsSystemSoap12" type="wsdl" bindingName="{pir360}wsSystemSoap12" soapVersion="1_2" anonymous="optional" definition="http://localhost/Desenv_Aluno02/wsSystem.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost/Desenv_Aluno02/wsSystem.asmx?WSDL"><con:part><con:url>http://localhost/Desenv_Aluno02/wsSystem.asmx?WSDL</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="pir360" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="pir360" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="pir360">
+      <s:element name="DireitosDefault">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cabecalho" type="tns:fcBaseCapa"/>
+            <s:element minOccurs="0" maxOccurs="1" name="oFiltro" type="tns:Direitos_filtro"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="fcBaseCapa">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:SalFunctionalClass">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="empresa" type="s:string"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="SalFunctionalClass"/>
+      <s:complexType name="Direitos_filtro">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:SalFunctionalClass">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="psEmpresa" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="psUsuario" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="psDireito" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="psOrigem" type="s:string"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="DireitosDefaultResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DireitosDefaultResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DireitosEmpresa">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cabecalho" type="tns:fcBaseCapa"/>
+            <s:element minOccurs="0" maxOccurs="1" name="oFiltro" type="tns:Direitos_filtro"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DireitosEmpresaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DireitosEmpresaResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DireitosUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cabecalho" type="tns:fcBaseCapa"/>
+            <s:element minOccurs="0" maxOccurs="1" name="oFiltro" type="tns:Direitos_filtro"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DireitosUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DireitosUsuarioResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DireitosOrigem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cabecalho" type="tns:fcBaseCapa"/>
+            <s:element minOccurs="0" maxOccurs="1" name="oFiltro" type="tns:Direitos_filtro"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DireitosOrigemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DireitosOrigemResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtemParametro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cabecalho" type="tns:fcBaseCapa"/>
+            <s:element minOccurs="0" maxOccurs="1" name="oFiltro" type="tns:cParametro"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="cParametro">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:fcBaseDados">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="NOME" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="VALOR" type="s:string"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="fcBaseDados">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:SalFunctionalClass"/>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="ObtemParametroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtemParametroResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtemParametroL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cabecalho" type="tns:fcBaseCapa"/>
+            <s:element minOccurs="0" maxOccurs="1" name="oFiltro" type="tns:cParametroL"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="cParametroL">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:fcBaseDados">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="NOME" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="VALOR" type="s:string"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="ObtemParametroLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtemParametroLResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtemParametroEmpresa">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cabecalho" type="tns:fcBaseCapa"/>
+            <s:element minOccurs="0" maxOccurs="1" name="oFiltro" type="tns:cParametroEmpresa"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="cParametroEmpresa">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:SalFunctionalClass">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="EMPRESA" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="NOME" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="VALOR" type="s:string"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="ObtemParametroEmpresaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtemParametroEmpresaResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtemParametroEmpresaL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cabecalho" type="tns:fcBaseCapa"/>
+            <s:element minOccurs="0" maxOccurs="1" name="oFiltro" type="tns:cParametroEmpresa"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtemParametroEmpresaLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtemParametroEmpresaLResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtemParametrosEmpresa">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cabecalho" type="tns:fcBaseCapa"/>
+            <s:element minOccurs="0" maxOccurs="1" name="oFiltros" type="tns:ArrayOfCParametroEmpresa"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCParametroEmpresa">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="cParametroEmpresa" nillable="true" type="tns:cParametroEmpresa"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ObtemParametrosEmpresaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtemParametrosEmpresaResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtemParametroAlgumaEmpresaMarcada">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cabecalho" type="tns:fcBaseCapa"/>
+            <s:element minOccurs="0" maxOccurs="1" name="oFiltro" type="tns:cParametroEmpresa"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtemParametroAlgumaEmpresaMarcadaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtemParametroAlgumaEmpresaMarcadaResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtemParametrosEmpresaFaturamento">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cabecalho" type="tns:fcBaseCapa"/>
+            <s:element minOccurs="0" maxOccurs="1" name="oFiltros" type="tns:ArrayOfCParametroEmpresa"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtemParametrosEmpresaFaturamentoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtemParametrosEmpresaFaturamentoResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateParametro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cabecalho" type="tns:fcBaseCapa"/>
+            <s:element minOccurs="0" maxOccurs="1" name="oDados" type="tns:cParametro"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateParametroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateParametroResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateEmpresaParametro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cabecalho" type="tns:fcBaseCapa"/>
+            <s:element minOccurs="0" maxOccurs="1" name="oDados" type="tns:cParametroEmpresa"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateEmpresaParametroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateEmpresaParametroResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtemRelatorio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cabecalho" type="tns:fcBaseCapa"/>
+            <s:element minOccurs="0" maxOccurs="1" name="poFiltro" type="tns:fcRELATORIOS_filtro"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="fcRELATORIOS_filtro">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:SalFunctionalClass">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="COD_RELATORIO" type="s:string"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="ObtemRelatorioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtemRelatorioResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SalvarRelatorio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cabecalho" type="tns:fcBaseCapa"/>
+            <s:element minOccurs="0" maxOccurs="1" name="poRelatorio" type="tns:fcRELATORIO_dados"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="fcRELATORIO_dados">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:SalFunctionalClass">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="COD_RELATORIO" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="RELATORIO" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="NOM_RELATORIO" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="NOM_TEMPLATE" type="s:string"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="SalvarRelatorioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SalvarRelatorioResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ResetRelatorio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cabecalho" type="tns:fcBaseCapa"/>
+            <s:element minOccurs="0" maxOccurs="1" name="poRelatorio" type="tns:fcRELATORIO_dados"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ResetRelatorioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ResetRelatorioResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Autenticar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="poAutenticar" type="tns:fcAutenticar"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="fcAutenticar">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:SalFunctionalClass">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="LOGIN" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="SENHA" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="APLICACAO" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="VERSAO" type="s:string"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="AutenticarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AutenticarResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidarToken">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cabecalho" type="tns:fcBaseCapa"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidarTokenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidarTokenResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AutenticarHubtool">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cabecalho" type="tns:fcBaseCapa"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AutenticarHubtoolResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AutenticarHubtoolResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtemAplicacoesHubtool">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cabecalho" type="tns:fcBaseCapa"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtemAplicacoesHubtoolResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtemAplicacoesHubtoolResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidarUsuarioDireitoPerfil">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cabecalho" type="tns:fcBaseCapa"/>
+            <s:element minOccurs="0" maxOccurs="1" name="poAutenticar" type="tns:fcAutenticar"/>
+            <s:element minOccurs="0" maxOccurs="1" name="psDireito" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidarUsuarioDireitoPerfilResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidarUsuarioDireitoPerfilResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="DireitosDefaultSoapIn">
+    <wsdl:part name="parameters" element="tns:DireitosDefault"/>
+  </wsdl:message>
+  <wsdl:message name="DireitosDefaultSoapOut">
+    <wsdl:part name="parameters" element="tns:DireitosDefaultResponse"/>
+  </wsdl:message>
+  <wsdl:message name="DireitosEmpresaSoapIn">
+    <wsdl:part name="parameters" element="tns:DireitosEmpresa"/>
+  </wsdl:message>
+  <wsdl:message name="DireitosEmpresaSoapOut">
+    <wsdl:part name="parameters" element="tns:DireitosEmpresaResponse"/>
+  </wsdl:message>
+  <wsdl:message name="DireitosUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:DireitosUsuario"/>
+  </wsdl:message>
+  <wsdl:message name="DireitosUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:DireitosUsuarioResponse"/>
+  </wsdl:message>
+  <wsdl:message name="DireitosOrigemSoapIn">
+    <wsdl:part name="parameters" element="tns:DireitosOrigem"/>
+  </wsdl:message>
+  <wsdl:message name="DireitosOrigemSoapOut">
+    <wsdl:part name="parameters" element="tns:DireitosOrigemResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ObtemParametroSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtemParametro"/>
+  </wsdl:message>
+  <wsdl:message name="ObtemParametroSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtemParametroResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ObtemParametroLSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtemParametroL"/>
+  </wsdl:message>
+  <wsdl:message name="ObtemParametroLSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtemParametroLResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ObtemParametroEmpresaSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtemParametroEmpresa"/>
+  </wsdl:message>
+  <wsdl:message name="ObtemParametroEmpresaSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtemParametroEmpresaResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ObtemParametroEmpresaLSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtemParametroEmpresaL"/>
+  </wsdl:message>
+  <wsdl:message name="ObtemParametroEmpresaLSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtemParametroEmpresaLResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ObtemParametrosEmpresaSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtemParametrosEmpresa"/>
+  </wsdl:message>
+  <wsdl:message name="ObtemParametrosEmpresaSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtemParametrosEmpresaResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ObtemParametroAlgumaEmpresaMarcadaSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtemParametroAlgumaEmpresaMarcada"/>
+  </wsdl:message>
+  <wsdl:message name="ObtemParametroAlgumaEmpresaMarcadaSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtemParametroAlgumaEmpresaMarcadaResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ObtemParametrosEmpresaFaturamentoSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtemParametrosEmpresaFaturamento"/>
+  </wsdl:message>
+  <wsdl:message name="ObtemParametrosEmpresaFaturamentoSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtemParametrosEmpresaFaturamentoResponse"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateParametroSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateParametro"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateParametroSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateParametroResponse"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateEmpresaParametroSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateEmpresaParametro"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateEmpresaParametroSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateEmpresaParametroResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ObtemRelatorioSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtemRelatorio"/>
+  </wsdl:message>
+  <wsdl:message name="ObtemRelatorioSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtemRelatorioResponse"/>
+  </wsdl:message>
+  <wsdl:message name="SalvarRelatorioSoapIn">
+    <wsdl:part name="parameters" element="tns:SalvarRelatorio"/>
+  </wsdl:message>
+  <wsdl:message name="SalvarRelatorioSoapOut">
+    <wsdl:part name="parameters" element="tns:SalvarRelatorioResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ResetRelatorioSoapIn">
+    <wsdl:part name="parameters" element="tns:ResetRelatorio"/>
+  </wsdl:message>
+  <wsdl:message name="ResetRelatorioSoapOut">
+    <wsdl:part name="parameters" element="tns:ResetRelatorioResponse"/>
+  </wsdl:message>
+  <wsdl:message name="AutenticarSoapIn">
+    <wsdl:part name="parameters" element="tns:Autenticar"/>
+  </wsdl:message>
+  <wsdl:message name="AutenticarSoapOut">
+    <wsdl:part name="parameters" element="tns:AutenticarResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ValidarTokenSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidarToken"/>
+  </wsdl:message>
+  <wsdl:message name="ValidarTokenSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidarTokenResponse"/>
+  </wsdl:message>
+  <wsdl:message name="AutenticarHubtoolSoapIn">
+    <wsdl:part name="parameters" element="tns:AutenticarHubtool"/>
+  </wsdl:message>
+  <wsdl:message name="AutenticarHubtoolSoapOut">
+    <wsdl:part name="parameters" element="tns:AutenticarHubtoolResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ObtemAplicacoesHubtoolSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtemAplicacoesHubtool"/>
+  </wsdl:message>
+  <wsdl:message name="ObtemAplicacoesHubtoolSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtemAplicacoesHubtoolResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ValidarUsuarioDireitoPerfilSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidarUsuarioDireitoPerfil"/>
+  </wsdl:message>
+  <wsdl:message name="ValidarUsuarioDireitoPerfilSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidarUsuarioDireitoPerfilResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="wsSystemSoap">
+    <wsdl:operation name="DireitosDefault">
+      <wsdl:input message="tns:DireitosDefaultSoapIn"/>
+      <wsdl:output message="tns:DireitosDefaultSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="DireitosEmpresa">
+      <wsdl:input message="tns:DireitosEmpresaSoapIn"/>
+      <wsdl:output message="tns:DireitosEmpresaSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="DireitosUsuario">
+      <wsdl:input message="tns:DireitosUsuarioSoapIn"/>
+      <wsdl:output message="tns:DireitosUsuarioSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="DireitosOrigem">
+      <wsdl:input message="tns:DireitosOrigemSoapIn"/>
+      <wsdl:output message="tns:DireitosOrigemSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ObtemParametro">
+      <wsdl:input message="tns:ObtemParametroSoapIn"/>
+      <wsdl:output message="tns:ObtemParametroSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ObtemParametroL">
+      <wsdl:input message="tns:ObtemParametroLSoapIn"/>
+      <wsdl:output message="tns:ObtemParametroLSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ObtemParametroEmpresa">
+      <wsdl:input message="tns:ObtemParametroEmpresaSoapIn"/>
+      <wsdl:output message="tns:ObtemParametroEmpresaSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ObtemParametroEmpresaL">
+      <wsdl:input message="tns:ObtemParametroEmpresaLSoapIn"/>
+      <wsdl:output message="tns:ObtemParametroEmpresaLSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ObtemParametrosEmpresa">
+      <wsdl:input message="tns:ObtemParametrosEmpresaSoapIn"/>
+      <wsdl:output message="tns:ObtemParametrosEmpresaSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ObtemParametroAlgumaEmpresaMarcada">
+      <wsdl:input message="tns:ObtemParametroAlgumaEmpresaMarcadaSoapIn"/>
+      <wsdl:output message="tns:ObtemParametroAlgumaEmpresaMarcadaSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ObtemParametrosEmpresaFaturamento">
+      <wsdl:input message="tns:ObtemParametrosEmpresaFaturamentoSoapIn"/>
+      <wsdl:output message="tns:ObtemParametrosEmpresaFaturamentoSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateParametro">
+      <wsdl:input message="tns:UpdateParametroSoapIn"/>
+      <wsdl:output message="tns:UpdateParametroSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEmpresaParametro">
+      <wsdl:input message="tns:UpdateEmpresaParametroSoapIn"/>
+      <wsdl:output message="tns:UpdateEmpresaParametroSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ObtemRelatorio">
+      <wsdl:input message="tns:ObtemRelatorioSoapIn"/>
+      <wsdl:output message="tns:ObtemRelatorioSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="SalvarRelatorio">
+      <wsdl:input message="tns:SalvarRelatorioSoapIn"/>
+      <wsdl:output message="tns:SalvarRelatorioSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ResetRelatorio">
+      <wsdl:input message="tns:ResetRelatorioSoapIn"/>
+      <wsdl:output message="tns:ResetRelatorioSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Autenticar">
+      <wsdl:input message="tns:AutenticarSoapIn"/>
+      <wsdl:output message="tns:AutenticarSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarToken">
+      <wsdl:input message="tns:ValidarTokenSoapIn"/>
+      <wsdl:output message="tns:ValidarTokenSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="AutenticarHubtool">
+      <wsdl:input message="tns:AutenticarHubtoolSoapIn"/>
+      <wsdl:output message="tns:AutenticarHubtoolSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ObtemAplicacoesHubtool">
+      <wsdl:input message="tns:ObtemAplicacoesHubtoolSoapIn"/>
+      <wsdl:output message="tns:ObtemAplicacoesHubtoolSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarUsuarioDireitoPerfil">
+      <wsdl:input message="tns:ValidarUsuarioDireitoPerfilSoapIn"/>
+      <wsdl:output message="tns:ValidarUsuarioDireitoPerfilSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="wsSystemHttpGet"/>
+  <wsdl:portType name="wsSystemHttpPost"/>
+  <wsdl:binding name="wsSystemSoap" type="tns:wsSystemSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="DireitosDefault">
+      <soap:operation soapAction="pir360/DireitosDefault" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DireitosEmpresa">
+      <soap:operation soapAction="pir360/DireitosEmpresa" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DireitosUsuario">
+      <soap:operation soapAction="pir360/DireitosUsuario" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DireitosOrigem">
+      <soap:operation soapAction="pir360/DireitosOrigem" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtemParametro">
+      <soap:operation soapAction="pir360/ObtemParametro" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtemParametroL">
+      <soap:operation soapAction="pir360/ObtemParametroL" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtemParametroEmpresa">
+      <soap:operation soapAction="pir360/ObtemParametroEmpresa" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtemParametroEmpresaL">
+      <soap:operation soapAction="pir360/ObtemParametroEmpresaL" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtemParametrosEmpresa">
+      <soap:operation soapAction="pir360/ObtemParametrosEmpresa" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtemParametroAlgumaEmpresaMarcada">
+      <soap:operation soapAction="pir360/ObtemParametroAlgumaEmpresaMarcada" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtemParametrosEmpresaFaturamento">
+      <soap:operation soapAction="pir360/ObtemParametrosEmpresaFaturamento" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateParametro">
+      <soap:operation soapAction="pir360/UpdateParametro" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEmpresaParametro">
+      <soap:operation soapAction="pir360/UpdateEmpresaParametro" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtemRelatorio">
+      <soap:operation soapAction="pir360/ObtemRelatorio" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalvarRelatorio">
+      <soap:operation soapAction="pir360/SalvarRelatorio" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ResetRelatorio">
+      <soap:operation soapAction="pir360/ResetRelatorio" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Autenticar">
+      <soap:operation soapAction="pir360/Autenticar" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarToken">
+      <soap:operation soapAction="pir360/ValidarToken" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AutenticarHubtool">
+      <soap:operation soapAction="pir360/AutenticarHubtool" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtemAplicacoesHubtool">
+      <soap:operation soapAction="pir360/ObtemAplicacoesHubtool" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarUsuarioDireitoPerfil">
+      <soap:operation soapAction="pir360/ValidarUsuarioDireitoPerfil" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsSystemSoap12" type="tns:wsSystemSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="DireitosDefault">
+      <soap12:operation soapAction="pir360/DireitosDefault" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DireitosEmpresa">
+      <soap12:operation soapAction="pir360/DireitosEmpresa" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DireitosUsuario">
+      <soap12:operation soapAction="pir360/DireitosUsuario" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DireitosOrigem">
+      <soap12:operation soapAction="pir360/DireitosOrigem" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtemParametro">
+      <soap12:operation soapAction="pir360/ObtemParametro" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtemParametroL">
+      <soap12:operation soapAction="pir360/ObtemParametroL" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtemParametroEmpresa">
+      <soap12:operation soapAction="pir360/ObtemParametroEmpresa" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtemParametroEmpresaL">
+      <soap12:operation soapAction="pir360/ObtemParametroEmpresaL" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtemParametrosEmpresa">
+      <soap12:operation soapAction="pir360/ObtemParametrosEmpresa" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtemParametroAlgumaEmpresaMarcada">
+      <soap12:operation soapAction="pir360/ObtemParametroAlgumaEmpresaMarcada" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtemParametrosEmpresaFaturamento">
+      <soap12:operation soapAction="pir360/ObtemParametrosEmpresaFaturamento" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateParametro">
+      <soap12:operation soapAction="pir360/UpdateParametro" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEmpresaParametro">
+      <soap12:operation soapAction="pir360/UpdateEmpresaParametro" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtemRelatorio">
+      <soap12:operation soapAction="pir360/ObtemRelatorio" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalvarRelatorio">
+      <soap12:operation soapAction="pir360/SalvarRelatorio" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ResetRelatorio">
+      <soap12:operation soapAction="pir360/ResetRelatorio" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Autenticar">
+      <soap12:operation soapAction="pir360/Autenticar" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarToken">
+      <soap12:operation soapAction="pir360/ValidarToken" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AutenticarHubtool">
+      <soap12:operation soapAction="pir360/AutenticarHubtool" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtemAplicacoesHubtool">
+      <soap12:operation soapAction="pir360/ObtemAplicacoesHubtool" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarUsuarioDireitoPerfil">
+      <soap12:operation soapAction="pir360/ValidarUsuarioDireitoPerfil" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsSystemHttpGet" type="tns:wsSystemHttpGet">
+    <http:binding verb="GET"/>
+  </wsdl:binding>
+  <wsdl:binding name="wsSystemHttpPost" type="tns:wsSystemHttpPost">
+    <http:binding verb="POST"/>
+  </wsdl:binding>
+  <wsdl:service name="wsSystem">
+    <wsdl:port name="wsSystemSoap" binding="tns:wsSystemSoap">
+      <soap:address location="http://localhost/Desenv_Aluno02/wsSystem.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="wsSystemSoap12" binding="tns:wsSystemSoap12">
+      <soap12:address location="http://localhost/Desenv_Aluno02/wsSystem.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="wsSystemHttpGet" binding="tns:wsSystemHttpGet">
+      <http:address location="http://localhost/Desenv_Aluno02/wsSystem.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="wsSystemHttpPost" binding="tns:wsSystemHttpPost">
+      <http:address location="http://localhost/Desenv_Aluno02/wsSystem.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint></con:endpoints><con:operation id="5906be77-9299-4a76-bf3d-8ce78b1bf081" isOneWay="false" action="pir360/Autenticar" name="Autenticar" bindingOperationName="Autenticar" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a76017a3-c02e-4afe-9081-05140821706b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:Autenticar>\r
+         <!--Optional:-->\r
+         <pir:poAutenticar>\r
+            <!--Optional:-->\r
+            <pir:LOGIN>?</pir:LOGIN>\r
+            <!--Optional:-->\r
+            <pir:SENHA>?</pir:SENHA>\r
+            <!--Optional:-->\r
+            <pir:APLICACAO>?</pir:APLICACAO>\r
+            <!--Optional:-->\r
+            <pir:VERSAO>?</pir:VERSAO>\r
+         </pir:poAutenticar>\r
+      </pir:Autenticar>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/wsSystemSoap/AutenticarRequest"/></con:call></con:operation><con:operation id="1ab1e0fd-5e07-4fbf-85e1-0df3108ec6db" isOneWay="false" action="pir360/AutenticarHubtool" name="AutenticarHubtool" bindingOperationName="AutenticarHubtool" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ce310347-ac77-4d90-97b7-3725c515879f" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:AutenticarHubtool>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+      </pir:AutenticarHubtool>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/wsSystemSoap/AutenticarHubtoolRequest"/></con:call></con:operation><con:operation id="b496ad73-55ea-4308-aa48-9335ab939de5" isOneWay="false" action="pir360/DireitosDefault" name="DireitosDefault" bindingOperationName="DireitosDefault" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5db7d420-a04a-41c1-b9ef-558365f2cc12" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:DireitosDefault>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:oFiltro>\r
+            <!--Optional:-->\r
+            <pir:psEmpresa>?</pir:psEmpresa>\r
+            <!--Optional:-->\r
+            <pir:psUsuario>?</pir:psUsuario>\r
+            <!--Optional:-->\r
+            <pir:psDireito>?</pir:psDireito>\r
+            <!--Optional:-->\r
+            <pir:psOrigem>?</pir:psOrigem>\r
+         </pir:oFiltro>\r
+      </pir:DireitosDefault>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/wsSystemSoap/DireitosDefaultRequest"/></con:call></con:operation><con:operation id="07629257-34e4-4d2d-a729-5c9b8e3da2fc" isOneWay="false" action="pir360/DireitosEmpresa" name="DireitosEmpresa" bindingOperationName="DireitosEmpresa" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1a3fe0ae-f88e-4f00-9675-a230ac8ff18f" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:DireitosEmpresa>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:oFiltro>\r
+            <!--Optional:-->\r
+            <pir:psEmpresa>?</pir:psEmpresa>\r
+            <!--Optional:-->\r
+            <pir:psUsuario>?</pir:psUsuario>\r
+            <!--Optional:-->\r
+            <pir:psDireito>?</pir:psDireito>\r
+            <!--Optional:-->\r
+            <pir:psOrigem>?</pir:psOrigem>\r
+         </pir:oFiltro>\r
+      </pir:DireitosEmpresa>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/wsSystemSoap/DireitosEmpresaRequest"/></con:call></con:operation><con:operation id="96abac03-6d65-47da-a058-5ab91e4fbe08" isOneWay="false" action="pir360/DireitosOrigem" name="DireitosOrigem" bindingOperationName="DireitosOrigem" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="dcb3831f-2998-40d7-88fc-6603aa1db0c2" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:DireitosOrigem>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:oFiltro>\r
+            <!--Optional:-->\r
+            <pir:psEmpresa>?</pir:psEmpresa>\r
+            <!--Optional:-->\r
+            <pir:psUsuario>?</pir:psUsuario>\r
+            <!--Optional:-->\r
+            <pir:psDireito>?</pir:psDireito>\r
+            <!--Optional:-->\r
+            <pir:psOrigem>?</pir:psOrigem>\r
+         </pir:oFiltro>\r
+      </pir:DireitosOrigem>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/wsSystemSoap/DireitosOrigemRequest"/></con:call></con:operation><con:operation id="22818de8-4952-46be-9788-1ad867110db2" isOneWay="false" action="pir360/DireitosUsuario" name="DireitosUsuario" bindingOperationName="DireitosUsuario" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="50cc1f4b-4b97-4e00-a371-33ca5ae61ed7" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:DireitosUsuario>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:oFiltro>\r
+            <!--Optional:-->\r
+            <pir:psEmpresa>?</pir:psEmpresa>\r
+            <!--Optional:-->\r
+            <pir:psUsuario>?</pir:psUsuario>\r
+            <!--Optional:-->\r
+            <pir:psDireito>?</pir:psDireito>\r
+            <!--Optional:-->\r
+            <pir:psOrigem>?</pir:psOrigem>\r
+         </pir:oFiltro>\r
+      </pir:DireitosUsuario>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/wsSystemSoap/DireitosUsuarioRequest"/></con:call></con:operation><con:operation id="fa8e5748-ea94-4c7d-a974-5fc7e7246acb" isOneWay="false" action="pir360/ObtemAplicacoesHubtool" name="ObtemAplicacoesHubtool" bindingOperationName="ObtemAplicacoesHubtool" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="2d6a2eb6-e3ab-4a1a-83db-aaa01b24ea29" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:ObtemAplicacoesHubtool>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+      </pir:ObtemAplicacoesHubtool>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/wsSystemSoap/ObtemAplicacoesHubtoolRequest"/></con:call></con:operation><con:operation id="b200497b-296c-4350-a7d9-ebd685b1a340" isOneWay="false" action="pir360/ObtemParametro" name="ObtemParametro" bindingOperationName="ObtemParametro" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7f0efed6-3e67-401a-bbfd-b32ba6f25eac" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:ObtemParametro>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:oFiltro>\r
+            <!--Optional:-->\r
+            <pir:NOME>?</pir:NOME>\r
+            <!--Optional:-->\r
+            <pir:VALOR>?</pir:VALOR>\r
+         </pir:oFiltro>\r
+      </pir:ObtemParametro>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/wsSystemSoap/ObtemParametroRequest"/></con:call></con:operation><con:operation id="fd8d516f-fd71-4b28-a2e7-8b7c05c93776" isOneWay="false" action="pir360/ObtemParametroAlgumaEmpresaMarcada" name="ObtemParametroAlgumaEmpresaMarcada" bindingOperationName="ObtemParametroAlgumaEmpresaMarcada" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6ea52034-e996-4186-9f6b-3100eab9e1b3" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:ObtemParametroAlgumaEmpresaMarcada>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:oFiltro>\r
+            <!--Optional:-->\r
+            <pir:EMPRESA>?</pir:EMPRESA>\r
+            <!--Optional:-->\r
+            <pir:NOME>?</pir:NOME>\r
+            <!--Optional:-->\r
+            <pir:VALOR>?</pir:VALOR>\r
+         </pir:oFiltro>\r
+      </pir:ObtemParametroAlgumaEmpresaMarcada>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/wsSystemSoap/ObtemParametroAlgumaEmpresaMarcadaRequest"/></con:call></con:operation><con:operation id="43928165-d00c-470b-b44a-06e0a0ff7156" isOneWay="false" action="pir360/ObtemParametroEmpresa" name="ObtemParametroEmpresa" bindingOperationName="ObtemParametroEmpresa" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f689aa13-8c75-4d80-b50b-d9c4807fc4c1" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:ObtemParametroEmpresa>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:oFiltro>\r
+            <!--Optional:-->\r
+            <pir:EMPRESA>?</pir:EMPRESA>\r
+            <!--Optional:-->\r
+            <pir:NOME>?</pir:NOME>\r
+            <!--Optional:-->\r
+            <pir:VALOR>?</pir:VALOR>\r
+         </pir:oFiltro>\r
+      </pir:ObtemParametroEmpresa>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/wsSystemSoap/ObtemParametroEmpresaRequest"/></con:call></con:operation><con:operation id="fc479f58-62c4-4538-8fcf-8925107bb182" isOneWay="false" action="pir360/ObtemParametroEmpresaL" name="ObtemParametroEmpresaL" bindingOperationName="ObtemParametroEmpresaL" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0ed4b6b2-cad0-4b09-ae87-b87d13d09d35" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:ObtemParametroEmpresaL>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:oFiltro>\r
+            <!--Optional:-->\r
+            <pir:EMPRESA>?</pir:EMPRESA>\r
+            <!--Optional:-->\r
+            <pir:NOME>?</pir:NOME>\r
+            <!--Optional:-->\r
+            <pir:VALOR>?</pir:VALOR>\r
+         </pir:oFiltro>\r
+      </pir:ObtemParametroEmpresaL>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/wsSystemSoap/ObtemParametroEmpresaLRequest"/></con:call></con:operation><con:operation id="615ca14a-4624-4b8a-b475-4aac278bd016" isOneWay="false" action="pir360/ObtemParametroL" name="ObtemParametroL" bindingOperationName="ObtemParametroL" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="34cdabd3-986e-4498-9a03-56333e627ec7" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:ObtemParametroL>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:oFiltro>\r
+            <!--Optional:-->\r
+            <pir:NOME>?</pir:NOME>\r
+            <!--Optional:-->\r
+            <pir:VALOR>?</pir:VALOR>\r
+         </pir:oFiltro>\r
+      </pir:ObtemParametroL>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/wsSystemSoap/ObtemParametroLRequest"/></con:call></con:operation><con:operation id="c5bd48d1-ee14-4643-b50b-cbe0ea23aee8" isOneWay="false" action="pir360/ObtemParametrosEmpresa" name="ObtemParametrosEmpresa" bindingOperationName="ObtemParametrosEmpresa" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="08f3893d-fe2b-4d59-998b-6564452dc532" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:ObtemParametrosEmpresa>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:oFiltros>\r
+            <!--Zero or more repetitions:-->\r
+            <pir:cParametroEmpresa>\r
+               <!--Optional:-->\r
+               <pir:EMPRESA>?</pir:EMPRESA>\r
+               <!--Optional:-->\r
+               <pir:NOME>?</pir:NOME>\r
+               <!--Optional:-->\r
+               <pir:VALOR>?</pir:VALOR>\r
+            </pir:cParametroEmpresa>\r
+         </pir:oFiltros>\r
+      </pir:ObtemParametrosEmpresa>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/wsSystemSoap/ObtemParametrosEmpresaRequest"/></con:call></con:operation><con:operation id="c1f55e4d-593e-4aee-aed9-8ab3f571947e" isOneWay="false" action="pir360/ObtemParametrosEmpresaFaturamento" name="ObtemParametrosEmpresaFaturamento" bindingOperationName="ObtemParametrosEmpresaFaturamento" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="72c5115e-4d4a-45ec-b871-417af48e605c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:ObtemParametrosEmpresaFaturamento>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:oFiltros>\r
+            <!--Zero or more repetitions:-->\r
+            <pir:cParametroEmpresa>\r
+               <!--Optional:-->\r
+               <pir:EMPRESA>?</pir:EMPRESA>\r
+               <!--Optional:-->\r
+               <pir:NOME>?</pir:NOME>\r
+               <!--Optional:-->\r
+               <pir:VALOR>?</pir:VALOR>\r
+            </pir:cParametroEmpresa>\r
+         </pir:oFiltros>\r
+      </pir:ObtemParametrosEmpresaFaturamento>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/wsSystemSoap/ObtemParametrosEmpresaFaturamentoRequest"/></con:call></con:operation><con:operation id="c6e9fa44-552f-4734-9190-e712e5aa4b27" isOneWay="false" action="pir360/ObtemRelatorio" name="ObtemRelatorio" bindingOperationName="ObtemRelatorio" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7dd34f2d-736a-4911-a2c3-8445d7c6d6e0" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:ObtemRelatorio>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:poFiltro>\r
+            <!--Optional:-->\r
+            <pir:COD_RELATORIO>?</pir:COD_RELATORIO>\r
+         </pir:poFiltro>\r
+      </pir:ObtemRelatorio>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/wsSystemSoap/ObtemRelatorioRequest"/></con:call></con:operation><con:operation id="9327ede2-4f26-45b7-8ed2-705aeec015e9" isOneWay="false" action="pir360/ResetRelatorio" name="ResetRelatorio" bindingOperationName="ResetRelatorio" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="77d212bf-a374-468b-a3ff-2c583e3f891a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:ResetRelatorio>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:poRelatorio>\r
+            <!--Optional:-->\r
+            <pir:COD_RELATORIO>?</pir:COD_RELATORIO>\r
+            <!--Optional:-->\r
+            <pir:RELATORIO>?</pir:RELATORIO>\r
+            <!--Optional:-->\r
+            <pir:NOM_RELATORIO>?</pir:NOM_RELATORIO>\r
+            <!--Optional:-->\r
+            <pir:NOM_TEMPLATE>?</pir:NOM_TEMPLATE>\r
+         </pir:poRelatorio>\r
+      </pir:ResetRelatorio>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/wsSystemSoap/ResetRelatorioRequest"/></con:call></con:operation><con:operation id="5b129050-ed50-413d-b420-d4dcc793238e" isOneWay="false" action="pir360/SalvarRelatorio" name="SalvarRelatorio" bindingOperationName="SalvarRelatorio" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d53b8ff9-1403-4be7-90ba-e809f4c39774" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:SalvarRelatorio>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:poRelatorio>\r
+            <!--Optional:-->\r
+            <pir:COD_RELATORIO>?</pir:COD_RELATORIO>\r
+            <!--Optional:-->\r
+            <pir:RELATORIO>?</pir:RELATORIO>\r
+            <!--Optional:-->\r
+            <pir:NOM_RELATORIO>?</pir:NOM_RELATORIO>\r
+            <!--Optional:-->\r
+            <pir:NOM_TEMPLATE>?</pir:NOM_TEMPLATE>\r
+         </pir:poRelatorio>\r
+      </pir:SalvarRelatorio>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/wsSystemSoap/SalvarRelatorioRequest"/></con:call></con:operation><con:operation id="045e4a85-43ac-4052-ac9a-a09fbaadb762" isOneWay="false" action="pir360/UpdateEmpresaParametro" name="UpdateEmpresaParametro" bindingOperationName="UpdateEmpresaParametro" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="42901662-f841-46c7-b2da-56d051778c5b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:UpdateEmpresaParametro>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:oDados>\r
+            <!--Optional:-->\r
+            <pir:EMPRESA>?</pir:EMPRESA>\r
+            <!--Optional:-->\r
+            <pir:NOME>?</pir:NOME>\r
+            <!--Optional:-->\r
+            <pir:VALOR>?</pir:VALOR>\r
+         </pir:oDados>\r
+      </pir:UpdateEmpresaParametro>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/wsSystemSoap/UpdateEmpresaParametroRequest"/></con:call></con:operation><con:operation id="9d976191-74a3-4c75-ae42-d58be262c2e9" isOneWay="false" action="pir360/UpdateParametro" name="UpdateParametro" bindingOperationName="UpdateParametro" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0420b17f-a756-4837-81cc-50b9cd5d9389" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:UpdateParametro>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:oDados>\r
+            <!--Optional:-->\r
+            <pir:NOME>?</pir:NOME>\r
+            <!--Optional:-->\r
+            <pir:VALOR>?</pir:VALOR>\r
+         </pir:oDados>\r
+      </pir:UpdateParametro>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/wsSystemSoap/UpdateParametroRequest"/></con:call></con:operation><con:operation id="f3f4a58d-e963-462c-906a-0a3634e5a813" isOneWay="false" action="pir360/ValidarToken" name="ValidarToken" bindingOperationName="ValidarToken" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6129ddef-02ab-48ae-8491-4e1043a019f2" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:ValidarToken>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+      </pir:ValidarToken>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/wsSystemSoap/ValidarTokenRequest"/></con:call></con:operation><con:operation id="c0288870-6876-4349-8367-66c510a27b29" isOneWay="false" action="pir360/ValidarUsuarioDireitoPerfil" name="ValidarUsuarioDireitoPerfil" bindingOperationName="ValidarUsuarioDireitoPerfil" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f06b0580-10b2-49ff-94b3-c37e2b33c624" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsSystem.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:ValidarUsuarioDireitoPerfil>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:poAutenticar>\r
+            <!--Optional:-->\r
+            <pir:LOGIN>?</pir:LOGIN>\r
+            <!--Optional:-->\r
+            <pir:SENHA>?</pir:SENHA>\r
+            <!--Optional:-->\r
+            <pir:APLICACAO>?</pir:APLICACAO>\r
+            <!--Optional:-->\r
+            <pir:VERSAO>?</pir:VERSAO>\r
+         </pir:poAutenticar>\r
+         <!--Optional:-->\r
+         <pir:psDireito>?</pir:psDireito>\r
+      </pir:ValidarUsuarioDireitoPerfil>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="pir360/wsSystemSoap/ValidarUsuarioDireitoPerfilRequest"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
