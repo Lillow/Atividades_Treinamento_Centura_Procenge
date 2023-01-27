@@ -1,0 +1,19 @@
+
+init
+idGeração= 2797 sUserName= lairton Tabela= PIR_MUNICIPIO VersãoDB= 6.04.00 Revisão= 152 Now= 25/01/2023 14:52:42:650000 ProductVersion=  v 5.7.2  sCaminhoRobo= C:\Robo360
+init
+idGeração= 2797 sUserName= aluno02 Tabela= PIR_MUNICIPIO VersãoDB= 6.04.00 Revisão= 152 Now= 25/01/2023 18:38:42:060000 ProductVersion=  v 5.7.2  sCaminhoRobo= C:\Treinamento Centura\Aluno02\Robo360
+init
+idGeração= 2797 sUserName= aluno02 Tabela= PIR_MUNICIPIO VersãoDB= 6.04.00 Revisão= 152 Now= 25/01/2023 18:40:43:150000 ProductVersion=  v 5.7.2  sCaminhoRobo= C:\Treinamento Centura\Aluno02\Robo360
+init
+idGeração= 2797 sUserName= aluno02 Tabela= PIR_MUNICIPIO VersãoDB= 6.04.00 Revisão= 152 Now= 25/01/2023 19:55:28:300000 ProductVersion=  v 5.7.2  sCaminhoRobo= C:\Treinamento Centura\Aluno02\Robo360
+init
+idGeração= 2797 sUserName= aluno02 Tabela= PIR_MUNICIPIO VersãoDB= 6.04.00 Revisão= 152 Now= 27/01/2023 08:59:12:320000 ProductVersion=  v 5.7.2  sCaminhoRobo= C:\Treinamento Centura\Aluno02\Robo360
+init
+idGeração= 2797 sUserName= aluno02 Tabela= PIR_MUNICIPIO VersãoDB= 6.04.00 Revisão= 152 Now= 27/01/2023 09:14:54:980000 ProductVersion=  v 5.7.2  sCaminhoRobo= C:\Treinamento Centura\Aluno02\Robo360
+init
+idGeração= 2797 sUserName= aluno02 Tabela= PIR_MUNICIPIO VersãoDB= 6.04.00 Revisão= 152 Now= 27/01/2023 09:21:15:930000 ProductVersion=  v 5.7.2  sCaminhoRobo= C:\Treinamento Centura\Aluno02\Robo360
+init
+idGeração= 2797 sUserName= aluno02 Tabela= PIR_MUNICIPIO VersãoDB= 6.04.00 Revisão= 152 Now= 27/01/2023 10:19:12:710000 ProductVersion=  v 5.7.2  sCaminhoRobo= C:\Treinamento Centura\Aluno02\Robo360
+init
+idGeração= 2797 sUserName= aluno02 Tabela= PIR_MUNICIPIO VersãoDB= 6.04.00 Revisão= 152 Now= 27/01/2023 11:11:31:260000 ProductVersion=  v 5.7.2  sCaminhoRobo= C:\Treinamento Centura\Aluno02\Robo360

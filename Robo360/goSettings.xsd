@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="AppSettings" type="fcUISettings"/>
+
+  <xs:complexType name="fcUISettings">
+    <xs:sequence>
+      <xs:element name="iWorkingDirectory" nillable="true" type="xs:string"/>
+      <xs:element name="iOutput" nillable="true" type="xs:string"/>
+      <xs:element name="iOutputFront" nillable="true" type="xs:string"/>
+      <xs:element name="iWebServices" nillable="true" type="xs:string"/>
+      <xs:element name="iUpgrade" nillable="true" type="xs:string"/>
+      <xs:element name="iAutoLoadOracleComments" nillable="true" type="xs:boolean"/>
+      <xs:element name="iDB" nillable="true" type="xs:string"/>
+      <xs:element name="iUs" nillable="true" type="xs:string"/>
+      <xs:element name="iPw" nillable="true" type="xs:string"/>
+      <xs:element name="iDBErro" nillable="true" type="xs:string"/>
+      <xs:element name="iUsErro" nillable="true" type="xs:string"/>
+      <xs:element name="iPwErro" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<AppSettings class="fcUISettings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <iWorkingDirectory>C:\Treinamento Centura\Aluno02\Robo360\Working</iWorkingDirectory>
+
+  <iOutput>C:\Treinamento Centura\Aluno02\Robo360\Backend</iOutput>
+
+  <iOutputFront>C:\Treinamento Centura\Aluno02\Robo360\Frontend</iOutputFront>
+
+  <iWebServices>C:\Temp\tempRobo</iWebServices>
+
+  <iUpgrade>D:\Robo360\bin</iUpgrade>
+
+  <iAutoLoadOracleComments>true</iAutoLoadOracleComments>
+
+  <iDB>CURSO360</iDB>
+
+  <iUs>PIRAMIDE</iUs>
+
+  <iPw>PIRAMIDE</iPw>
+
+  <iDBErro>CURSO360</iDBErro>
+
+  <iUsErro>PIRAMIDE</iUsErro>
+
+  <iPwErro>PIRAMIDE</iPwErro>
+
+</AppSettings>
