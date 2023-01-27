@@ -1,0 +1,1 @@
+<%@ WebService Class="pir360.wsGRUPO_EMPRESARIAL" %>

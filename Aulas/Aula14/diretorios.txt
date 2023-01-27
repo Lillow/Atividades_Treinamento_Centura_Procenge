@@ -1,0 +1,70 @@
+ O volume na unidade D ‚ Dados
+ O N£mero de S‚rie do Volume ‚ 96E5-DB9A
+
+ Pasta de D:\Inetpub\wwwroot
+
+21/10/2021  11:03    <DIR>          .
+21/10/2021  11:03    <DIR>          ..
+29/05/2020  15:21    <DIR>          aspnet_client
+09/07/2020  17:58             1.046 aspnet_client - Atalho.lnk
+26/07/2021  17:10    <DIR>          desenv
+29/05/2020  15:50    <DIR>          desenvT
+01/07/2021  15:43    <DIR>          desenv_aalmeida
+27/11/2020  16:20    <DIR>          desenv_Adailson
+01/06/2021  16:56    <DIR>          desenv_adilson
+13/10/2021  17:47    <DIR>          desenv_adriano
+13/10/2021  16:35    <DIR>          desenv_Alfredo
+26/01/2021  11:55    <DIR>          desenv_Ana
+27/11/2020  10:01    <DIR>          desenv_andre
+24/09/2021  17:39    <DIR>          desenv_andreFilho
+22/10/2021  18:28    <DIR>          desenv_aplacido
+06/09/2021  17:47    <DIR>          desenv_arquitetos
+06/09/2021  16:28               531 desenv_arquitetosdebug.xml
+06/09/2021  16:28               953 desenv_arquitetosdebug.xsd
+18/05/2021  15:27               114 desenv_arquitetoswsClientes.TXT
+11/03/2021  15:31               499 desenv_arquitetos__poMovBancariaExt_LOG.TXT
+04/12/2020  18:02    <DIR>          desenv_asouza
+30/07/2021  08:22    <DIR>          desenv_asuamy
+18/05/2021  14:16    <DIR>          desenv_BFERREIRA
+21/12/2020  14:56    <DIR>          desenv_BFERREIRA_BKP
+04/10/2021  11:36    <DIR>          desenv_Carlos
+26/05/2021  15:35    <DIR>          desenv_Carol
+23/06/2021  09:29    <DIR>          desenv_curso
+13/09/2021  15:06    <DIR>          desenv_curso_GLP
+25/11/2020  17:30    <DIR>          desenv_Deyvid
+09/07/2021  17:22    <DIR>          desenv_dpontes
+28/12/2020  09:36    <DIR>          desenv_DRODRIGUES
+20/08/2021  15:46    <DIR>          desenv_dsilva
+14/04/2021  21:32    <DIR>          desenv_elder
+22/10/2021  10:02    <DIR>          desenv_eudson
+27/08/2021  16:15    <DIR>          desenv_fchaves
+03/09/2021  14:31    <DIR>          desenv_Financeiro
+08/10/2021  08:18    <DIR>          desenv_financeiro2
+20/10/2021  17:11    <DIR>          desenv_FLS
+04/01/2021  11:24    <DIR>          desenv_gleybson
+06/05/2021  00:06    <DIR>          desenv_Integracao
+16/09/2021  10:26    <DIR>          desenv_jalencar
+21/10/2021  15:05    <DIR>          desenv_joelson
+30/09/2021  10:08    <DIR>          desenv_jreis
+21/10/2021  14:30    <DIR>          desenv_jsalome
+05/08/2021  10:41    <DIR>          desenv_lairton
+15/10/2021  15:13    <DIR>          desenv_lfilipe
+06/04/2021  09:27    <DIR>          desenv_lucas
+29/07/2020  14:28    <DIR>          desenv_Michel
+02/12/2020  16:08    <DIR>          desenv_Miguel
+31/03/2021  15:45    <DIR>          desenv_mirna
+27/11/2020  19:10    <DIR>          desenv_nelson
+21/06/2021  19:00    <DIR>          desenv_Pimentel
+18/10/2021  11:05    <DIR>          desenv_renato
+21/12/2020  17:41    <DIR>          desenv_renato - Copia
+05/10/2021  17:21    <DIR>          desenv_rmedeiros
+31/03/2021  15:45    <DIR>          desenv_rosberg
+12/08/2021  16:28    <DIR>          desen_Hudson
+07/10/2021  09:15    <DIR>          desen_Kelne
+21/07/2020  12:35    <DIR>          executorProcessos
+29/05/2020  15:17            99.710 iis-85.png
+29/05/2020  15:17               701 iisstart.htm
+29/05/2020  15:34    <DIR>          P360
+28/12/2020  16:15    <DIR>          P360JOELSON
+               7 arquivo(s)        103.554 bytes
+              56 pasta(s)   19.959.443.456 bytes dispon¡veis

@@ -1,0 +1,1050 @@
+﻿<?xml version="1.0" encoding="utf-8"?><symbolimport xmlns="urn:Unify.Sal.Compiler">
+<assembly name="Piramide.CSharpUtils" path="d:\usuarios\alfredo\Piramide\Desenvolvimento\Fontes">
+<class name="EncodingUtils" symbol="Piramide_CSharpUtils_EncodingUtils" namespace="Piramide.CSharpUtils" loadassymbol="true" implemented="true">
+<type enum="ObjectNative">System_Object</type>
+<functions>
+<function name=".ctor" symbol="EncodingUtils" implemented="true" loadasglobal="false" constructor="true">
+<type enum="NoneVoid" />
+<parameters>
+</parameters>
+</function>
+<function name="Base64Encode" symbol="Base64Encode" implemented="true" loadasglobal="false">
+<type enum="String" />
+<parameters>
+<parameter direction="In">
+<type enum="Binary" />
+</parameter>
+</parameters>
+</function>
+<function name="Base64Decode" symbol="Base64Decode" implemented="true" loadasglobal="false">
+<type enum="Binary" />
+<parameters>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+</parameters>
+</function>
+</functions>
+</class>
+<class name="EnvironmentUtils" symbol="Piramide_CSharpUtils_EnvironmentUtils" namespace="Piramide.CSharpUtils" loadassymbol="true" implemented="true">
+<type enum="ObjectNative">System_Object</type>
+<functions>
+<function name=".ctor" symbol="EnvironmentUtils" implemented="true" loadasglobal="false" constructor="true">
+<type enum="NoneVoid" />
+<parameters>
+</parameters>
+</function>
+<function name="GetStackTraceAtual" symbol="GetStackTraceAtual" implemented="true" loadasglobal="false">
+<type enum="String" />
+<parameters>
+</parameters>
+</function>
+<function name="GetStringNovaLinha" symbol="GetStringNovaLinha" implemented="true" loadasglobal="false">
+<type enum="String" />
+<parameters>
+</parameters>
+</function>
+<function name="GetVariavelAmbiente" symbol="GetVariavelAmbiente" implemented="true" loadasglobal="false">
+<type enum="String" />
+<parameters>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+</parameters>
+</function>
+</functions>
+</class>
+<class name="HTTPUtils" symbol="Piramide_CSharpUtils_HTTPUtils" namespace="Piramide.CSharpUtils" loadassymbol="true" implemented="true">
+<type enum="ObjectNative">System_Object</type>
+<functions>
+<function name=".ctor" symbol="HTTPUtils" implemented="true" loadasglobal="false" constructor="true">
+<type enum="NoneVoid" />
+<parameters>
+</parameters>
+</function>
+<function name="GetMachineInfo" symbol="GetMachineInfo" implemented="true" loadasglobal="false">
+<type enum="String" />
+<parameters>
+</parameters>
+</function>
+<function name="GetAuthUser" symbol="GetAuthUser" implemented="true" loadasglobal="false">
+<type enum="String" />
+<parameters>
+</parameters>
+</function>
+<function name="ExecuteHttpRequest" symbol="ExecuteHttpRequest" implemented="true" loadasglobal="false">
+<type enum="String" />
+<parameters>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+<parameter direction="In">
+<type enum="StringNative" array="true" />
+</parameter>
+<parameter direction="In">
+<type enum="StringNative" array="true" />
+</parameter>
+<parameter direction="In">
+<type enum="StringNative" array="true" />
+</parameter>
+<parameter direction="In">
+<type enum="StringNative" array="true" />
+</parameter>
+</parameters>
+</function>
+<function name="SetDadosProxy" symbol="SetDadosProxy" implemented="true" loadasglobal="false">
+<type enum="NoneVoid" />
+<parameters>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+</parameters>
+</function>
+<function name="SetConverteRetornoBase64" symbol="SetConverteRetornoBase64" implemented="true" loadasglobal="false">
+<type enum="NoneVoid" />
+<parameters>
+</parameters>
+</function>
+</functions>
+</class>
+<class name="ReflectionUtils" symbol="Piramide_CSharpUtils_ReflectionUtils" namespace="Piramide.CSharpUtils" loadassymbol="true" implemented="true">
+<type enum="ObjectNative">System_Object</type>
+<functions>
+<function name=".ctor" symbol="ReflectionUtils" implemented="true" loadasglobal="false" constructor="true">
+<type enum="NoneVoid" />
+<parameters>
+</parameters>
+</function>
+<function name="PreencherObjetoDados" symbol="PreencherObjetoDados" implemented="true" loadasglobal="false">
+<type enum="NoneVoid" />
+<parameters>
+<parameter direction="In">
+<type enum="StringNative" array="true" />
+</parameter>
+<parameter direction="In">
+<type enum="StringNative" array="true" />
+</parameter>
+<parameter direction="In">
+<type enum="ObjectNative">System_Object</type>
+</parameter>
+</parameters>
+</function>
+<function name="GetAssemblyAtual" symbol="GetAssemblyAtual" implemented="true" loadasglobal="false">
+<type enum="String" />
+<parameters>
+</parameters>
+</function>
+</functions>
+</class>
+<class name="WEBTAEncoderLib" symbol="Piramide_CSharpUtils_Terceiros_WEBTAEncoderLib" namespace="Piramide.CSharpUtils.Terceiros" loadassymbol="true" implemented="true">
+<type enum="ObjectNative">System_Object</type>
+<functions>
+<function name=".ctor" symbol="WEBTAEncoderLib" implemented="true" loadasglobal="false" constructor="true">
+<type enum="NoneVoid" />
+<parameters>
+</parameters>
+</function>
+<function name="CriptografarArquivoRemessa" symbol="CriptografarArquivoRemessa" implemented="true" loadasglobal="false">
+<type enum="String" />
+<parameters>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+</parameters>
+</function>
+<function name="DescriptografarArquivoRetorno" symbol="DescriptografarArquivoRetorno" implemented="true" loadasglobal="false">
+<type enum="String" />
+<parameters>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+</parameters>
+</function>
+<function name="fInitEncoder" symbol="Piramide_CSharpUtils_Terceiros_WEBTAEncoderLib_fInitEncoder" implemented="true" loadasglobal="true">
+<type enum="IntPtr" />
+<parameters>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+<parameter direction="In">
+<type enum="Binary" />
+</parameter>
+<parameter direction="In">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+</parameter>
+</parameters>
+</function>
+<function name="fDecodeKeyFile" symbol="Piramide_CSharpUtils_Terceiros_WEBTAEncoderLib_fDecodeKeyFile" implemented="true" loadasglobal="true">
+<type enum="Integer" />
+<parameters>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+<parameter direction="In">
+<type enum="Binary" />
+</parameter>
+<parameter direction="In">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+</parameter>
+</parameters>
+</function>
+<function name="fInitDecoder" symbol="Piramide_CSharpUtils_Terceiros_WEBTAEncoderLib_fInitDecoder" implemented="true" loadasglobal="true">
+<type enum="IntPtr" />
+<parameters>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+<parameter direction="In">
+<type enum="Binary" />
+</parameter>
+<parameter direction="In">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+</parameter>
+</parameters>
+</function>
+<function name="fReadData" symbol="Piramide_CSharpUtils_Terceiros_WEBTAEncoderLib_fReadData" implemented="true" loadasglobal="true">
+<type enum="Integer" />
+<parameters>
+<parameter direction="In">
+<type enum="IntPtr" />
+</parameter>
+<parameter direction="In">
+<type enum="Binary" />
+</parameter>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+<parameter direction="In">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+</parameter>
+</parameters>
+</function>
+<function name="fWriteData" symbol="Piramide_CSharpUtils_Terceiros_WEBTAEncoderLib_fWriteData" implemented="true" loadasglobal="true">
+<type enum="Integer" />
+<parameters>
+<parameter direction="In">
+<type enum="IntPtr" />
+</parameter>
+<parameter direction="In">
+<type enum="Binary" />
+</parameter>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+<parameter direction="In">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+</parameter>
+</parameters>
+</function>
+<function name="fCloseDecoder" symbol="Piramide_CSharpUtils_Terceiros_WEBTAEncoderLib_fCloseDecoder" implemented="true" loadasglobal="true">
+<type enum="Integer" />
+<parameters>
+<parameter direction="In">
+<type enum="IntPtr" />
+</parameter>
+<parameter direction="In">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+</parameter>
+</parameters>
+</function>
+<function name="fCloseEncoder" symbol="Piramide_CSharpUtils_Terceiros_WEBTAEncoderLib_fCloseEncoder" implemented="true" loadasglobal="true">
+<type enum="Integer" />
+<parameters>
+<parameter direction="In">
+<type enum="IntPtr" />
+</parameter>
+<parameter direction="In">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+</parameter>
+</parameters>
+</function>
+</functions>
+</class>
+</assembly>
+<assembly name="mscorlib">
+<class name="Object" symbol="System_Object" namespace="System" loadassymbol="true" implemented="true" autoCreatable="false">
+<functions>
+</functions>
+</class>
+<class name="StringBuilder" symbol="System_Text_StringBuilder" namespace="System.Text" loadassymbol="true" implemented="true">
+<type enum="ObjectNative">System_Object</type>
+<functions>
+<function name=".ctor" symbol="StringBuilder_Overload1" implemented="true" loadasglobal="false" constructor="true">
+<type enum="NoneVoid" />
+<parameters>
+</parameters>
+</function>
+<function name=".ctor" symbol="StringBuilder_Overload2" implemented="true" loadasglobal="false" constructor="true">
+<type enum="NoneVoid" />
+<parameters>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+</parameters>
+</function>
+<function name=".ctor" symbol="StringBuilder_Overload3" implemented="true" loadasglobal="false" constructor="true">
+<type enum="NoneVoid" />
+<parameters>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+</parameters>
+</function>
+<function name=".ctor" symbol="StringBuilder_Overload4" implemented="true" loadasglobal="false" constructor="true">
+<type enum="NoneVoid" />
+<parameters>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+</parameters>
+</function>
+<function name=".ctor" symbol="StringBuilder_Overload5" implemented="true" loadasglobal="false" constructor="true">
+<type enum="NoneVoid" />
+<parameters>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+</parameters>
+</function>
+<function name=".ctor" symbol="StringBuilder_Overload6" implemented="true" loadasglobal="false" constructor="true">
+<type enum="NoneVoid" />
+<parameters>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+</parameters>
+</function>
+<function name="get_Capacity" symbol="get_Capacity" implemented="true" loadasglobal="false">
+<type enum="Integer" />
+<parameters>
+</parameters>
+</function>
+<function name="set_Capacity" symbol="set_Capacity" implemented="true" loadasglobal="false">
+<type enum="NoneVoid" />
+<parameters>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+</parameters>
+</function>
+<function name="get_MaxCapacity" symbol="get_MaxCapacity" implemented="true" loadasglobal="false">
+<type enum="Integer" />
+<parameters>
+</parameters>
+</function>
+<function name="EnsureCapacity" symbol="EnsureCapacity" implemented="true" loadasglobal="false">
+<type enum="Integer" />
+<parameters>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+</parameters>
+</function>
+<function name="ToString" symbol="ToString_Overload1" implemented="true" loadasglobal="false">
+<type enum="String" />
+<parameters>
+</parameters>
+</function>
+<function name="ToString" symbol="ToString_Overload2" implemented="true" loadasglobal="false">
+<type enum="String" />
+<parameters>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+</parameters>
+</function>
+<function name="Clear" symbol="Clear" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+</parameters>
+</function>
+<function name="get_Length" symbol="get_Length" implemented="true" loadasglobal="false">
+<type enum="Integer" />
+<parameters>
+</parameters>
+</function>
+<function name="set_Length" symbol="set_Length" implemented="true" loadasglobal="false">
+<type enum="NoneVoid" />
+<parameters>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+</parameters>
+</function>
+<function name="get_Chars" symbol="get_Chars" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Char</type>
+<parameters>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+</parameters>
+</function>
+<function name="set_Chars" symbol="set_Chars" implemented="true" loadasglobal="false">
+<type enum="NoneVoid" />
+<parameters>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+<parameter direction="In">
+<type enum="ObjectNative">System_Char</type>
+</parameter>
+</parameters>
+</function>
+<function name="Append" symbol="Append_Overload1" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="ObjectNative">System_Char</type>
+</parameter>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+</parameters>
+</function>
+<function name="Append" symbol="Append_Overload2" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="ObjectNative" array="true">System_Char</type>
+</parameter>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+</parameters>
+</function>
+<function name="Append" symbol="Append_Overload3" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+</parameters>
+</function>
+<function name="Append" symbol="Append_Overload4" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+</parameters>
+</function>
+<function name="CopyTo" symbol="CopyTo" implemented="true" loadasglobal="false">
+<type enum="NoneVoid" />
+<parameters>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+<parameter direction="In">
+<type enum="ObjectNative" array="true">System_Char</type>
+</parameter>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+</parameters>
+</function>
+<function name="Insert" symbol="Insert_Overload1" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+</parameters>
+</function>
+<function name="Remove" symbol="Remove" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+</parameters>
+</function>
+<function name="Append" symbol="Append_Overload5" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="SByte" />
+</parameter>
+</parameters>
+</function>
+<function name="Append" symbol="Append_Overload6" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="Byte" />
+</parameter>
+</parameters>
+</function>
+<function name="Append" symbol="Append_Overload7" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="ObjectNative">System_Char</type>
+</parameter>
+</parameters>
+</function>
+<function name="Append" symbol="Append_Overload8" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="Short" />
+</parameter>
+</parameters>
+</function>
+<function name="Append" symbol="Append_Overload9" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+</parameters>
+</function>
+<function name="Append" symbol="Append_Overload10" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="LongNative" />
+</parameter>
+</parameters>
+</function>
+<function name="Append" symbol="Append_Overload11" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="Float" />
+</parameter>
+</parameters>
+</function>
+<function name="Append" symbol="Append_Overload12" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="Double" />
+</parameter>
+</parameters>
+</function>
+<function name="Append" symbol="Append_Overload13" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="DecimalNative" />
+</parameter>
+</parameters>
+</function>
+<function name="Append" symbol="Append_Overload14" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="ObjectNative">System_UInt16</type>
+</parameter>
+</parameters>
+</function>
+<function name="Append" symbol="Append_Overload15" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="UnsignedInteger" />
+</parameter>
+</parameters>
+</function>
+<function name="Append" symbol="Append_Overload16" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="ObjectNative">System_UInt64</type>
+</parameter>
+</parameters>
+</function>
+<function name="Append" symbol="Append_Overload17" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="ObjectNative">System_Object</type>
+</parameter>
+</parameters>
+</function>
+<function name="Append" symbol="Append_Overload18" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="ObjectNative" array="true">System_Char</type>
+</parameter>
+</parameters>
+</function>
+<function name="Insert" symbol="Insert_Overload2" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+</parameters>
+</function>
+<function name="Insert" symbol="Insert_Overload3" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+<parameter direction="In">
+<type enum="SByte" />
+</parameter>
+</parameters>
+</function>
+<function name="Insert" symbol="Insert_Overload4" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+<parameter direction="In">
+<type enum="Byte" />
+</parameter>
+</parameters>
+</function>
+<function name="Insert" symbol="Insert_Overload5" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+<parameter direction="In">
+<type enum="Short" />
+</parameter>
+</parameters>
+</function>
+<function name="Insert" symbol="Insert_Overload6" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+<parameter direction="In">
+<type enum="ObjectNative">System_Char</type>
+</parameter>
+</parameters>
+</function>
+<function name="Insert" symbol="Insert_Overload7" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+<parameter direction="In">
+<type enum="ObjectNative" array="true">System_Char</type>
+</parameter>
+</parameters>
+</function>
+<function name="Insert" symbol="Insert_Overload8" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+<parameter direction="In">
+<type enum="ObjectNative" array="true">System_Char</type>
+</parameter>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+</parameters>
+</function>
+<function name="Insert" symbol="Insert_Overload9" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+</parameters>
+</function>
+<function name="Insert" symbol="Insert_Overload10" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+<parameter direction="In">
+<type enum="LongNative" />
+</parameter>
+</parameters>
+</function>
+<function name="Insert" symbol="Insert_Overload11" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+<parameter direction="In">
+<type enum="Float" />
+</parameter>
+</parameters>
+</function>
+<function name="Insert" symbol="Insert_Overload12" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+<parameter direction="In">
+<type enum="Double" />
+</parameter>
+</parameters>
+</function>
+<function name="Insert" symbol="Insert_Overload13" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+<parameter direction="In">
+<type enum="DecimalNative" />
+</parameter>
+</parameters>
+</function>
+<function name="Insert" symbol="Insert_Overload14" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+<parameter direction="In">
+<type enum="ObjectNative">System_UInt16</type>
+</parameter>
+</parameters>
+</function>
+<function name="Insert" symbol="Insert_Overload15" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+<parameter direction="In">
+<type enum="UnsignedInteger" />
+</parameter>
+</parameters>
+</function>
+<function name="Insert" symbol="Insert_Overload16" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+<parameter direction="In">
+<type enum="ObjectNative">System_UInt64</type>
+</parameter>
+</parameters>
+</function>
+<function name="Insert" symbol="Insert_Overload17" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+<parameter direction="In">
+<type enum="ObjectNative">System_Object</type>
+</parameter>
+</parameters>
+</function>
+<function name="AppendFormat" symbol="AppendFormat_Overload1" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+<parameter direction="In">
+<type enum="ObjectNative">System_Object</type>
+</parameter>
+</parameters>
+</function>
+<function name="AppendFormat" symbol="AppendFormat_Overload2" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+<parameter direction="In">
+<type enum="ObjectNative">System_Object</type>
+</parameter>
+<parameter direction="In">
+<type enum="ObjectNative">System_Object</type>
+</parameter>
+</parameters>
+</function>
+<function name="AppendFormat" symbol="AppendFormat_Overload3" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+<parameter direction="In">
+<type enum="ObjectNative">System_Object</type>
+</parameter>
+<parameter direction="In">
+<type enum="ObjectNative">System_Object</type>
+</parameter>
+<parameter direction="In">
+<type enum="ObjectNative">System_Object</type>
+</parameter>
+</parameters>
+</function>
+<function name="AppendFormat" symbol="AppendFormat_Overload4" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="ObjectNative">System_IFormatProvider</type>
+</parameter>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+<parameter direction="In">
+<type enum="ObjectNative">System_Object</type>
+</parameter>
+</parameters>
+</function>
+<function name="AppendFormat" symbol="AppendFormat_Overload5" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="ObjectNative">System_IFormatProvider</type>
+</parameter>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+<parameter direction="In">
+<type enum="ObjectNative">System_Object</type>
+</parameter>
+<parameter direction="In">
+<type enum="ObjectNative">System_Object</type>
+</parameter>
+</parameters>
+</function>
+<function name="AppendFormat" symbol="AppendFormat_Overload6" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="ObjectNative">System_IFormatProvider</type>
+</parameter>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+<parameter direction="In">
+<type enum="ObjectNative">System_Object</type>
+</parameter>
+<parameter direction="In">
+<type enum="ObjectNative">System_Object</type>
+</parameter>
+<parameter direction="In">
+<type enum="ObjectNative">System_Object</type>
+</parameter>
+</parameters>
+</function>
+<function name="Replace" symbol="Replace_Overload1" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+</parameters>
+</function>
+<function name="Replace" symbol="Replace_Overload2" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+</parameters>
+</function>
+<function name="Replace" symbol="Replace_Overload3" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="ObjectNative">System_Char</type>
+</parameter>
+<parameter direction="In">
+<type enum="ObjectNative">System_Char</type>
+</parameter>
+</parameters>
+</function>
+<function name="Replace" symbol="Replace_Overload4" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="ObjectNative">System_Char</type>
+</parameter>
+<parameter direction="In">
+<type enum="ObjectNative">System_Char</type>
+</parameter>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+</parameters>
+</function>
+<function name="AppendLine" symbol="AppendLine_Overload1" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+</parameters>
+</function>
+<function name="Append" symbol="Append_Overload20" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="Boolean" />
+</parameter>
+</parameters>
+</function>
+<function name="Insert" symbol="Insert_Overload18" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="Integer" />
+</parameter>
+<parameter direction="In">
+<type enum="Boolean" />
+</parameter>
+</parameters>
+</function>
+<function name="AppendLine" symbol="AppendLine_Overload2" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+</parameters>
+</function>
+<function name="AppendFormat" symbol="AppendFormat_Overload7" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+<parameter direction="In">
+<type enum="ObjectNative" array="true">System_Object</type>
+</parameter>
+</parameters>
+</function>
+<function name="AppendFormat" symbol="AppendFormat_Overload8" implemented="true" loadasglobal="false">
+<type enum="ObjectNative">System_Text_StringBuilder</type>
+<parameters>
+<parameter direction="In">
+<type enum="ObjectNative">System_IFormatProvider</type>
+</parameter>
+<parameter direction="In">
+<type enum="String" />
+</parameter>
+<parameter direction="In">
+<type enum="ObjectNative" array="true">System_Object</type>
+</parameter>
+</parameters>
+</function>
+</functions>
+</class>
+<class name="IFormatProvider" symbol="System_IFormatProvider" namespace="System" loadassymbol="true" implemented="true" autoCreatable="false">
+<type enum="ObjectNative">System_Object</type>
+<functions>
+</functions>
+</class>
+</assembly>
+</symbolimport>
