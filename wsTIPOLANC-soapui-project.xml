@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="fe0caced-ad96-4682-a163-7798efd11f5e" activeEnvironment="Default" name="wsTIPOLANC" resourceRoot="" soapui-version="5.6.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="5a1507a9-76f0-4d73-9236-c4dff1db3880" wsaVersion="NONE" name="wsTIPOLANCSoap" type="wsdl" bindingName="{Pir360}wsTIPOLANCSoap" soapVersion="1_1" anonymous="optional" definition="http://localhost/Desenv_Aluno02/wsTIPOLANC.asmx?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://localhost/Desenv_Aluno02/wsTIPOLANC.asmx</con:endpoint></con:endpoints><con:operation id="b0e6ffe4-95c7-40d2-b9f2-89338cafc416" isOneWay="false" action="Pir360/Alterar" name="Alterar" bindingOperationName="Alterar" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="59744c1b-cb44-4f16-b98b-353d997bd54a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsTIPOLANC.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="Pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:Alterar>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:poTIPOLANC>\r
+            <!--Optional:-->\r
+            <pir:TCODIGO>?</pir:TCODIGO>\r
+            <!--Optional:-->\r
+            <pir:TNOME>?</pir:TNOME>\r
+            <!--Optional:-->\r
+            <pir:IND_COMPOE_TOT_BEM>?</pir:IND_COMPOE_TOT_BEM>\r
+            <!--Optional:-->\r
+            <pir:Atributos>\r
+               <!--Zero or more repetitions:-->\r
+               <pir:fcAtributos>\r
+                  <!--Optional:-->\r
+                  <pir:COD_TIPO_ATRIBUTO>?</pir:COD_TIPO_ATRIBUTO>\r
+                  <!--Optional:-->\r
+                  <pir:DSC_VALOR_ATRIBUTO>?</pir:DSC_VALOR_ATRIBUTO>\r
+               </pir:fcAtributos>\r
+            </pir:Atributos>\r
+         </pir:poTIPOLANC>\r
+      </pir:Alterar>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="Pir360/Alterar"/></con:call></con:operation><con:operation id="5c4d1d87-038c-467d-b127-4fd5c47b3435" isOneWay="false" action="Pir360/Consultar" name="Consultar" bindingOperationName="Consultar" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1ce2cb8b-e913-4898-817d-bf0b01178ff9" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsTIPOLANC.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="Pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:Consultar>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:oFiltro>\r
+            <!--Optional:-->\r
+            <pir:TCODIGO>?</pir:TCODIGO>\r
+            <!--Optional:-->\r
+            <pir:TNOME>?</pir:TNOME>\r
+            <!--Optional:-->\r
+            <pir:IND_COMPOE_TOT_BEM>?</pir:IND_COMPOE_TOT_BEM>\r
+            <!--Optional:-->\r
+            <pir:Atributos>\r
+               <!--Zero or more repetitions:-->\r
+               <pir:fcAtributos>\r
+                  <!--Optional:-->\r
+                  <pir:COD_TIPO_ATRIBUTO>?</pir:COD_TIPO_ATRIBUTO>\r
+                  <!--Optional:-->\r
+                  <pir:DSC_VALOR_ATRIBUTO>?</pir:DSC_VALOR_ATRIBUTO>\r
+               </pir:fcAtributos>\r
+            </pir:Atributos>\r
+            <!--Optional:-->\r
+            <pir:TCODIGO__MAIORIGUAL>?</pir:TCODIGO__MAIORIGUAL>\r
+            <!--Optional:-->\r
+            <pir:TCODIGO__MENORIGUAL>?</pir:TCODIGO__MENORIGUAL>\r
+            <!--Optional:-->\r
+            <pir:TNOME__MAIORIGUAL>?</pir:TNOME__MAIORIGUAL>\r
+            <!--Optional:-->\r
+            <pir:TNOME__MENORIGUAL>?</pir:TNOME__MENORIGUAL>\r
+            <!--Optional:-->\r
+            <pir:TNOME__LIKE>?</pir:TNOME__LIKE>\r
+         </pir:oFiltro>\r
+      </pir:Consultar>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="Pir360/Consultar"/></con:call></con:operation><con:operation id="5112e218-bcea-4137-a1c1-d4fa7bd1f58d" isOneWay="false" action="Pir360/Excluir" name="Excluir" bindingOperationName="Excluir" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="981898d5-8ebe-4ace-a1c5-a746ea46cd39" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsTIPOLANC.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="Pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:Excluir>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:poTIPOLANC>\r
+            <!--Optional:-->\r
+            <pir:TCODIGO>?</pir:TCODIGO>\r
+            <!--Optional:-->\r
+            <pir:TNOME>?</pir:TNOME>\r
+            <!--Optional:-->\r
+            <pir:IND_COMPOE_TOT_BEM>?</pir:IND_COMPOE_TOT_BEM>\r
+            <!--Optional:-->\r
+            <pir:Atributos>\r
+               <!--Zero or more repetitions:-->\r
+               <pir:fcAtributos>\r
+                  <!--Optional:-->\r
+                  <pir:COD_TIPO_ATRIBUTO>?</pir:COD_TIPO_ATRIBUTO>\r
+                  <!--Optional:-->\r
+                  <pir:DSC_VALOR_ATRIBUTO>?</pir:DSC_VALOR_ATRIBUTO>\r
+               </pir:fcAtributos>\r
+            </pir:Atributos>\r
+         </pir:poTIPOLANC>\r
+      </pir:Excluir>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="Pir360/Excluir"/></con:call></con:operation><con:operation id="d389fe3f-c8db-42d8-8d3d-98e8fcbd0da8" isOneWay="false" action="Pir360/Incluir" name="Incluir" bindingOperationName="Incluir" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7ab3263f-f09e-41af-95df-1e1c4ba406a4" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsTIPOLANC.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="Pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:Incluir>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:poTIPOLANC>\r
+            <!--Optional:-->\r
+            <pir:TCODIGO>?</pir:TCODIGO>\r
+            <!--Optional:-->\r
+            <pir:TNOME>?</pir:TNOME>\r
+            <!--Optional:-->\r
+            <pir:IND_COMPOE_TOT_BEM>?</pir:IND_COMPOE_TOT_BEM>\r
+            <!--Optional:-->\r
+            <pir:Atributos>\r
+               <!--Zero or more repetitions:-->\r
+               <pir:fcAtributos>\r
+                  <!--Optional:-->\r
+                  <pir:COD_TIPO_ATRIBUTO>?</pir:COD_TIPO_ATRIBUTO>\r
+                  <!--Optional:-->\r
+                  <pir:DSC_VALOR_ATRIBUTO>?</pir:DSC_VALOR_ATRIBUTO>\r
+               </pir:fcAtributos>\r
+            </pir:Atributos>\r
+         </pir:poTIPOLANC>\r
+      </pir:Incluir>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="Pir360/Incluir"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="f9034e03-2efe-4a47-a1b0-491ffd64707b" wsaVersion="NONE" name="wsTIPOLANCSoap12" type="wsdl" bindingName="{Pir360}wsTIPOLANCSoap12" soapVersion="1_2" anonymous="optional" definition="http://localhost/Desenv_Aluno02/wsTIPOLANC.asmx?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost/Desenv_Aluno02/wsTIPOLANC.asmx?wsdl"><con:part><con:url>http://localhost/Desenv_Aluno02/wsTIPOLANC.asmx?wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="Pir360" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="Pir360" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="Pir360">
+      <s:element name="Consultar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cabecalho" type="tns:fcBaseCapa"/>
+            <s:element minOccurs="0" maxOccurs="1" name="oFiltro" type="tns:fcTIPOLANC_filtro"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="fcBaseCapa">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:SalFunctionalClass">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="empresa" type="s:string"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="SalFunctionalClass"/>
+      <s:complexType name="fcAtributos">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:SalFunctionalClass">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="COD_TIPO_ATRIBUTO" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="DSC_VALOR_ATRIBUTO" type="s:string"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="fcTIPOLANC_dados">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:SalFunctionalClass">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="TCODIGO" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="TNOME" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="IND_COMPOE_TOT_BEM" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="Atributos" type="tns:ArrayOfFcAtributos"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfFcAtributos">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="fcAtributos" nillable="true" type="tns:fcAtributos"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="fcTIPOLANC_filtro">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:fcTIPOLANC_dados">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="TCODIGO__MAIORIGUAL" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="TCODIGO__MENORIGUAL" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="TNOME__MAIORIGUAL" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="TNOME__MENORIGUAL" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="TNOME__LIKE" type="s:string"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="ConsultarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultarResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Incluir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cabecalho" type="tns:fcBaseCapa"/>
+            <s:element minOccurs="0" maxOccurs="1" name="poTIPOLANC" type="tns:fcTIPOLANC_dados"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IncluirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IncluirResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Alterar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cabecalho" type="tns:fcBaseCapa"/>
+            <s:element minOccurs="0" maxOccurs="1" name="poTIPOLANC" type="tns:fcTIPOLANC_dados"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AlterarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AlterarResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Excluir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cabecalho" type="tns:fcBaseCapa"/>
+            <s:element minOccurs="0" maxOccurs="1" name="poTIPOLANC" type="tns:fcTIPOLANC_dados"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcluirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExcluirResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ConsultarSoapIn">
+    <wsdl:part name="parameters" element="tns:Consultar"/>
+  </wsdl:message>
+  <wsdl:message name="ConsultarSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultarResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IncluirSoapIn">
+    <wsdl:part name="parameters" element="tns:Incluir"/>
+  </wsdl:message>
+  <wsdl:message name="IncluirSoapOut">
+    <wsdl:part name="parameters" element="tns:IncluirResponse"/>
+  </wsdl:message>
+  <wsdl:message name="AlterarSoapIn">
+    <wsdl:part name="parameters" element="tns:Alterar"/>
+  </wsdl:message>
+  <wsdl:message name="AlterarSoapOut">
+    <wsdl:part name="parameters" element="tns:AlterarResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ExcluirSoapIn">
+    <wsdl:part name="parameters" element="tns:Excluir"/>
+  </wsdl:message>
+  <wsdl:message name="ExcluirSoapOut">
+    <wsdl:part name="parameters" element="tns:ExcluirResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="wsTIPOLANCSoap">
+    <wsdl:operation name="Consultar">
+      <wsdl:input message="tns:ConsultarSoapIn"/>
+      <wsdl:output message="tns:ConsultarSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Incluir">
+      <wsdl:input message="tns:IncluirSoapIn"/>
+      <wsdl:output message="tns:IncluirSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Alterar">
+      <wsdl:input message="tns:AlterarSoapIn"/>
+      <wsdl:output message="tns:AlterarSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Excluir">
+      <wsdl:input message="tns:ExcluirSoapIn"/>
+      <wsdl:output message="tns:ExcluirSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="wsTIPOLANCHttpGet"/>
+  <wsdl:portType name="wsTIPOLANCHttpPost"/>
+  <wsdl:binding name="wsTIPOLANCSoap" type="tns:wsTIPOLANCSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Consultar">
+      <soap:operation soapAction="Pir360/Consultar" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Incluir">
+      <soap:operation soapAction="Pir360/Incluir" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Alterar">
+      <soap:operation soapAction="Pir360/Alterar" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Excluir">
+      <soap:operation soapAction="Pir360/Excluir" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsTIPOLANCSoap12" type="tns:wsTIPOLANCSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Consultar">
+      <soap12:operation soapAction="Pir360/Consultar" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Incluir">
+      <soap12:operation soapAction="Pir360/Incluir" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Alterar">
+      <soap12:operation soapAction="Pir360/Alterar" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Excluir">
+      <soap12:operation soapAction="Pir360/Excluir" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsTIPOLANCHttpGet" type="tns:wsTIPOLANCHttpGet">
+    <http:binding verb="GET"/>
+  </wsdl:binding>
+  <wsdl:binding name="wsTIPOLANCHttpPost" type="tns:wsTIPOLANCHttpPost">
+    <http:binding verb="POST"/>
+  </wsdl:binding>
+  <wsdl:service name="wsTIPOLANC">
+    <wsdl:port name="wsTIPOLANCSoap" binding="tns:wsTIPOLANCSoap">
+      <soap:address location="http://localhost/Desenv_Aluno02/wsTIPOLANC.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="wsTIPOLANCSoap12" binding="tns:wsTIPOLANCSoap12">
+      <soap12:address location="http://localhost/Desenv_Aluno02/wsTIPOLANC.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="wsTIPOLANCHttpGet" binding="tns:wsTIPOLANCHttpGet">
+      <http:address location="http://localhost/Desenv_Aluno02/wsTIPOLANC.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="wsTIPOLANCHttpPost" binding="tns:wsTIPOLANCHttpPost">
+      <http:address location="http://localhost/Desenv_Aluno02/wsTIPOLANC.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost/Desenv_Aluno02/wsTIPOLANC.asmx</con:endpoint></con:endpoints><con:operation id="7d6c04ac-750e-4687-93d0-19637a7a3467" isOneWay="false" action="Pir360/Alterar" name="Alterar" bindingOperationName="Alterar" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="391900df-55f5-4707-ad2b-7d1839996800" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsTIPOLANC.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="Pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:Alterar>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:poTIPOLANC>\r
+            <!--Optional:-->\r
+            <pir:TCODIGO>?</pir:TCODIGO>\r
+            <!--Optional:-->\r
+            <pir:TNOME>?</pir:TNOME>\r
+            <!--Optional:-->\r
+            <pir:IND_COMPOE_TOT_BEM>?</pir:IND_COMPOE_TOT_BEM>\r
+            <!--Optional:-->\r
+            <pir:Atributos>\r
+               <!--Zero or more repetitions:-->\r
+               <pir:fcAtributos>\r
+                  <!--Optional:-->\r
+                  <pir:COD_TIPO_ATRIBUTO>?</pir:COD_TIPO_ATRIBUTO>\r
+                  <!--Optional:-->\r
+                  <pir:DSC_VALOR_ATRIBUTO>?</pir:DSC_VALOR_ATRIBUTO>\r
+               </pir:fcAtributos>\r
+            </pir:Atributos>\r
+         </pir:poTIPOLANC>\r
+      </pir:Alterar>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="Pir360/wsTIPOLANCSoap/AlterarRequest"/></con:call></con:operation><con:operation id="58af7aa3-54e1-44e3-baf1-2a6e0d430516" isOneWay="false" action="Pir360/Consultar" name="Consultar" bindingOperationName="Consultar" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="07280dfc-bd6d-40db-9818-886c26a87a51" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsTIPOLANC.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="Pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:Consultar>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:oFiltro>\r
+            <!--Optional:-->\r
+            <pir:TCODIGO>?</pir:TCODIGO>\r
+            <!--Optional:-->\r
+            <pir:TNOME>?</pir:TNOME>\r
+            <!--Optional:-->\r
+            <pir:IND_COMPOE_TOT_BEM>?</pir:IND_COMPOE_TOT_BEM>\r
+            <!--Optional:-->\r
+            <pir:Atributos>\r
+               <!--Zero or more repetitions:-->\r
+               <pir:fcAtributos>\r
+                  <!--Optional:-->\r
+                  <pir:COD_TIPO_ATRIBUTO>?</pir:COD_TIPO_ATRIBUTO>\r
+                  <!--Optional:-->\r
+                  <pir:DSC_VALOR_ATRIBUTO>?</pir:DSC_VALOR_ATRIBUTO>\r
+               </pir:fcAtributos>\r
+            </pir:Atributos>\r
+            <!--Optional:-->\r
+            <pir:TCODIGO__MAIORIGUAL>?</pir:TCODIGO__MAIORIGUAL>\r
+            <!--Optional:-->\r
+            <pir:TCODIGO__MENORIGUAL>?</pir:TCODIGO__MENORIGUAL>\r
+            <!--Optional:-->\r
+            <pir:TNOME__MAIORIGUAL>?</pir:TNOME__MAIORIGUAL>\r
+            <!--Optional:-->\r
+            <pir:TNOME__MENORIGUAL>?</pir:TNOME__MENORIGUAL>\r
+            <!--Optional:-->\r
+            <pir:TNOME__LIKE>?</pir:TNOME__LIKE>\r
+         </pir:oFiltro>\r
+      </pir:Consultar>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="Pir360/wsTIPOLANCSoap/ConsultarRequest"/></con:call></con:operation><con:operation id="f8f32270-4470-48ab-9e1e-1b582efca7ac" isOneWay="false" action="Pir360/Excluir" name="Excluir" bindingOperationName="Excluir" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="edf10ba1-3007-4033-82a6-2ca115a87940" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsTIPOLANC.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="Pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:Excluir>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:poTIPOLANC>\r
+            <!--Optional:-->\r
+            <pir:TCODIGO>?</pir:TCODIGO>\r
+            <!--Optional:-->\r
+            <pir:TNOME>?</pir:TNOME>\r
+            <!--Optional:-->\r
+            <pir:IND_COMPOE_TOT_BEM>?</pir:IND_COMPOE_TOT_BEM>\r
+            <!--Optional:-->\r
+            <pir:Atributos>\r
+               <!--Zero or more repetitions:-->\r
+               <pir:fcAtributos>\r
+                  <!--Optional:-->\r
+                  <pir:COD_TIPO_ATRIBUTO>?</pir:COD_TIPO_ATRIBUTO>\r
+                  <!--Optional:-->\r
+                  <pir:DSC_VALOR_ATRIBUTO>?</pir:DSC_VALOR_ATRIBUTO>\r
+               </pir:fcAtributos>\r
+            </pir:Atributos>\r
+         </pir:poTIPOLANC>\r
+      </pir:Excluir>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="Pir360/wsTIPOLANCSoap/ExcluirRequest"/></con:call></con:operation><con:operation id="5de3df79-0e04-4732-970a-37dd5d4e2a77" isOneWay="false" action="Pir360/Incluir" name="Incluir" bindingOperationName="Incluir" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0528adaf-5b8c-4abf-a96e-289c9eeb2672" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsTIPOLANC.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="Pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:Incluir>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:poTIPOLANC>\r
+            <!--Optional:-->\r
+            <pir:TCODIGO>?</pir:TCODIGO>\r
+            <!--Optional:-->\r
+            <pir:TNOME>?</pir:TNOME>\r
+            <!--Optional:-->\r
+            <pir:IND_COMPOE_TOT_BEM>?</pir:IND_COMPOE_TOT_BEM>\r
+            <!--Optional:-->\r
+            <pir:Atributos>\r
+               <!--Zero or more repetitions:-->\r
+               <pir:fcAtributos>\r
+                  <!--Optional:-->\r
+                  <pir:COD_TIPO_ATRIBUTO>?</pir:COD_TIPO_ATRIBUTO>\r
+                  <!--Optional:-->\r
+                  <pir:DSC_VALOR_ATRIBUTO>?</pir:DSC_VALOR_ATRIBUTO>\r
+               </pir:fcAtributos>\r
+            </pir:Atributos>\r
+         </pir:poTIPOLANC>\r
+      </pir:Incluir>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="Pir360/wsTIPOLANCSoap/IncluirRequest"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

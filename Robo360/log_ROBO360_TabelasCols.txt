@@ -16,4 +16,10 @@ idGeração= 2797 sUserName= aluno02 Tabela= PIR_MUNICIPIO VersãoDB= 6.04.00 Revis
 init
 idGeração= 2797 sUserName= aluno02 Tabela= PIR_MUNICIPIO VersãoDB= 6.04.00 Revisão= 152 Now= 27/01/2023 10:19:12:710000 ProductVersion=  v 5.7.2  sCaminhoRobo= C:\Treinamento Centura\Aluno02\Robo360
 init
-idGeração= 2797 sUserName= aluno02 Tabela= PIR_MUNICIPIO VersãoDB= 6.04.00 Revisão= 152 Now= 27/01/2023 11:11:31:260000 ProductVersion=  v 5.7.2  sCaminhoRobo= C:\Treinamento Centura\Aluno02\Robo360
+idGeração= 2797 sUserName= aluno02 Tabela= PIR_MUNICIPIO VersãoDB= 6.04.00 Revisão= 152 Now= 27/01/2023 11:11:31:260000 ProductVersion=  v 5.7.2  sCaminhoRobo= C:\Treinamento Centura\Aluno02\Robo360
+init
+idGeração= 2797 sUserName= aluno02 Tabela= CLIENTES_CURSO VersãoDB= 6.04.00 Revisão= 152 Now= 30/01/2023 12:31:37:080000 ProductVersion=  v 5.7.2  sCaminhoRobo= C:\Treinamento Centura\Aluno02\Robo360
+init
+idGeração= 2797 sUserName= aluno02 Tabela= TIPOLANC VersãoDB= 6.04.00 Revisão= 152 Now= 01/02/2023 09:53:12:420000 ProductVersion=  v 5.7.2  sCaminhoRobo= C:\Treinamento Centura\Aluno02\Robo360
+init
+idGeração= 2797 sUserName= aluno02 Tabela= TIPO_CERTIFICACAO VersãoDB= 6.04.00 Revisão= 152 Now= 01/02/2023 16:11:55:460000 ProductVersion=  v 5.7.2  sCaminhoRobo= C:\Treinamento Centura\Aluno02\Robo360

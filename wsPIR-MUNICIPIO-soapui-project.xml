@@ -262,14 +262,14 @@
          <!--Optional:-->\r
          <pir:cabecalho>\r
             <!--Optional:-->\r
-            <pir:token>F34693987BAC575CE0530FD4210A39F4</pir:token>\r
+            <pir:token>F35C8944E2D515C9E0530FD4210A3C29</pir:token>\r
             <!--Optional:-->\r
             <pir:empresa>001</pir:empresa>\r
          </pir:cabecalho>\r
          <!--Optional:-->\r
          <pir:oFiltro>\r
             <!--Optional:-->\r
-            <pir:COD_MUNICIPIO>2700201</pir:COD_MUNICIPIO>\r
+            <pir:COD_MUNICIPIO>2611606</pir:COD_MUNICIPIO>\r
             <!--Optional:-->\r
             <pir:COD_MUNICIPIO__LIKE></pir:COD_MUNICIPIO__LIKE>\r
             <!--Optional:-->\r
@@ -277,7 +277,7 @@
             <!--Optional:-->\r
             <pir:DSC_MUNICIPIO__LIKE></pir:DSC_MUNICIPIO__LIKE>\r
             <!--Optional:-->\r
-            <pir:COD_UF>AL</pir:COD_UF>\r
+            <pir:COD_UF></pir:COD_UF>\r
             <!--Optional:-->\r
             <pir:COD_UF__LIKE></pir:COD_UF__LIKE>\r
          </pir:oFiltro>\r
@@ -338,42 +338,42 @@
          <!--Optional:-->\r
          <pir:cabecalho>\r
             <!--Optional:-->\r
-            <pir:token>F34693987BAC575CE0530FD4210A39F4</pir:token>\r
+            <pir:token>F35C8944E2D515C9E0530FD4210A3C29</pir:token>\r
             <!--Optional:-->\r
             <pir:empresa>001</pir:empresa>\r
          </pir:cabecalho>\r
          <!--Optional:-->\r
          <pir:poPIR_MUNICIPIO>\r
             <!--Optional:-->\r
-            <pir:COD_MUNICIPIO>2700201</pir:COD_MUNICIPIO>\r
+            <pir:COD_MUNICIPIO>2611606</pir:COD_MUNICIPIO>\r
             <!--Optional:-->\r
-            <pir:DSC_MUNICIPIO>ANADIA</pir:DSC_MUNICIPIO>\r
+            <pir:DSC_MUNICIPIO>RECIFE</pir:DSC_MUNICIPIO>\r
             <!--Optional:-->\r
-            <pir:COD_UF>PE</pir:COD_UF>\r
+            <pir:COD_UF>AL</pir:COD_UF>\r
             <!--Optional:-->\r
             <pir:COD_AREA></pir:COD_AREA>\r
             <!--Optional:-->\r
             <pir:IND_UTILIZA_DIPAMB>S</pir:IND_UTILIZA_DIPAMB>\r
             <!--Optional:-->\r
-            <pir:IND_CAPITAL>N</pir:IND_CAPITAL>\r
+            <pir:IND_CAPITAL>S</pir:IND_CAPITAL>\r
             <!--Optional:-->\r
             <pir:COD_PAIS>01058</pir:COD_PAIS>\r
             <!--Optional:-->\r
-            <pir:COD_MUNICIPIO_IBGE>2700201</pir:COD_MUNICIPIO_IBGE>\r
+            <pir:COD_MUNICIPIO_IBGE>2611606</pir:COD_MUNICIPIO_IBGE>\r
             <!--Optional:-->\r
-            <pir:COD_FORNEC></pir:COD_FORNEC>\r
+            <pir:COD_FORNEC>10007528</pir:COD_FORNEC>\r
             <!--Optional:-->\r
-            <pir:COD_MUNICIPIO_DIPAM_B></pir:COD_MUNICIPIO_DIPAM_B>\r
+            <pir:COD_MUNICIPIO_DIPAM_B>7420</pir:COD_MUNICIPIO_DIPAM_B>\r
             <!--Optional:-->\r
             <pir:COD_MUNICIPIO_ANP></pir:COD_MUNICIPIO_ANP>\r
             <!--Optional:-->\r
             <pir:VAL_EST_HOSPEDAGEM>0</pir:VAL_EST_HOSPEDAGEM>\r
             <!--Optional:-->\r
-            <pir:IND_PROCESSO_VIAGEM>N</pir:IND_PROCESSO_VIAGEM>\r
+            <pir:IND_PROCESSO_VIAGEM>S</pir:IND_PROCESSO_VIAGEM>\r
             <!--Optional:-->\r
-            <pir:COD_MUNICIPIO_SIAFI>2703</pir:COD_MUNICIPIO_SIAFI>\r
+            <pir:COD_MUNICIPIO_SIAFI>2531</pir:COD_MUNICIPIO_SIAFI>\r
             <!--Optional:-->\r
-            <pir:DAT_ALTERACAO_REGISTRO>2021/06/30 17:50:36</pir:DAT_ALTERACAO_REGISTRO>\r
+            <pir:DAT_ALTERACAO_REGISTRO>29/06/2021 17:50:36</pir:DAT_ALTERACAO_REGISTRO>\r
             <!--Optional:-->\r
             <pir:COD_GRUPO_ATRIBUTO></pir:COD_GRUPO_ATRIBUTO>\r
          </pir:poPIR_MUNICIPIO>\r
