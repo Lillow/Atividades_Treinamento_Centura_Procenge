@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="26f2d1c6-f934-4531-8b3e-48457dddc28b" activeEnvironment="Default" name="wsPIR_MOTIVO_RENEGOCIACAO" resourceRoot="" soapui-version="5.6.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="4402f9b3-4023-42e3-9632-57021fe0bace" wsaVersion="NONE" name="wsPIR_MOTIVO_RENEGOCIACAOSoap12" type="wsdl" bindingName="{Pir360}wsPIR_MOTIVO_RENEGOCIACAOSoap12" soapVersion="1_2" anonymous="optional" definition="http://localhost/Desenv_Aluno02/wsPIR_MOTIVO_RENEGOCIACAO.asmx?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://localhost/Desenv_Aluno02/wsPIR_MOTIVO_RENEGOCIACAO.asmx</con:endpoint></con:endpoints><con:operation id="60b6d603-de3b-4134-bad6-69407ac1adc1" isOneWay="false" action="Pir360/Alterar" name="Alterar" bindingOperationName="Alterar" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="07171fb8-f839-47c0-9350-f812a1237534" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsPIR_MOTIVO_RENEGOCIACAO.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="Pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:Alterar>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:poPIR_MOTIVO_RENEGOCIACAO>\r
+            <!--Optional:-->\r
+            <pir:COD_MOTIVO>?</pir:COD_MOTIVO>\r
+            <!--Optional:-->\r
+            <pir:DSC_MOTIVO>?</pir:DSC_MOTIVO>\r
+         </pir:poPIR_MOTIVO_RENEGOCIACAO>\r
+      </pir:Alterar>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="Pir360/wsPIR_MOTIVO_RENEGOCIACAOSoap/AlterarRequest"/></con:call></con:operation><con:operation id="ee881100-c275-4144-8b30-02f67b43110e" isOneWay="false" action="Pir360/Consultar" name="Consultar" bindingOperationName="Consultar" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d8a69728-da4d-45f5-959d-8b6648829eba" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsPIR_MOTIVO_RENEGOCIACAO.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="Pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:Consultar>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:oFiltro>\r
+            <!--Optional:-->\r
+            <pir:COD_MOTIVO>?</pir:COD_MOTIVO>\r
+            <!--Optional:-->\r
+            <pir:COD_MOTIVO__MAIORIGUAL>?</pir:COD_MOTIVO__MAIORIGUAL>\r
+            <!--Optional:-->\r
+            <pir:COD_MOTIVO__MENORIGUAL>?</pir:COD_MOTIVO__MENORIGUAL>\r
+            <!--Optional:-->\r
+            <pir:DSC_MOTIVO>?</pir:DSC_MOTIVO>\r
+            <!--Optional:-->\r
+            <pir:DSC_MOTIVO__MAIORIGUAL>?</pir:DSC_MOTIVO__MAIORIGUAL>\r
+            <!--Optional:-->\r
+            <pir:DSC_MOTIVO__MENORIGUAL>?</pir:DSC_MOTIVO__MENORIGUAL>\r
+         </pir:oFiltro>\r
+      </pir:Consultar>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="Pir360/wsPIR_MOTIVO_RENEGOCIACAOSoap/ConsultarRequest"/></con:call></con:operation><con:operation id="f8abfb02-6737-4ae4-842e-c045c5792c48" isOneWay="false" action="Pir360/Excluir" name="Excluir" bindingOperationName="Excluir" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1837f850-f0c0-4029-8c22-0ee1457ba354" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsPIR_MOTIVO_RENEGOCIACAO.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="Pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:Excluir>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:poPIR_MOTIVO_RENEGOCIACAO>\r
+            <!--Optional:-->\r
+            <pir:COD_MOTIVO>?</pir:COD_MOTIVO>\r
+            <!--Optional:-->\r
+            <pir:DSC_MOTIVO>?</pir:DSC_MOTIVO>\r
+         </pir:poPIR_MOTIVO_RENEGOCIACAO>\r
+      </pir:Excluir>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="Pir360/wsPIR_MOTIVO_RENEGOCIACAOSoap/ExcluirRequest"/></con:call></con:operation><con:operation id="4b68cfd2-b6d1-4f22-82a3-8d0c4414c9db" isOneWay="false" action="Pir360/Incluir" name="Incluir" bindingOperationName="Incluir" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1b940fc7-4608-4b6f-baff-47994b73e70c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsPIR_MOTIVO_RENEGOCIACAO.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="Pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:Incluir>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:poPIR_MOTIVO_RENEGOCIACAO>\r
+            <!--Optional:-->\r
+            <pir:COD_MOTIVO>?</pir:COD_MOTIVO>\r
+            <!--Optional:-->\r
+            <pir:DSC_MOTIVO>?</pir:DSC_MOTIVO>\r
+         </pir:poPIR_MOTIVO_RENEGOCIACAO>\r
+      </pir:Incluir>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="Pir360/wsPIR_MOTIVO_RENEGOCIACAOSoap/IncluirRequest"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="dc233575-de7c-41ec-a49f-6dd9d953c4eb" wsaVersion="NONE" name="wsPIR_MOTIVO_RENEGOCIACAOSoap" type="wsdl" bindingName="{Pir360}wsPIR_MOTIVO_RENEGOCIACAOSoap" soapVersion="1_1" anonymous="optional" definition="http://localhost/Desenv_Aluno02/wsPIR_MOTIVO_RENEGOCIACAO.asmx?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost/Desenv_Aluno02/wsPIR_MOTIVO_RENEGOCIACAO.asmx?wsdl"><con:part><con:url>http://localhost/Desenv_Aluno02/wsPIR_MOTIVO_RENEGOCIACAO.asmx?wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="Pir360" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="Pir360" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="Pir360">
+      <s:element name="Consultar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cabecalho" type="tns:fcBaseCapa"/>
+            <s:element minOccurs="0" maxOccurs="1" name="oFiltro" type="tns:fcPIR_MOTIVO_RENEGOCIACAO_filtro"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="fcBaseCapa">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:SalFunctionalClass">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="empresa" type="s:string"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="SalFunctionalClass"/>
+      <s:complexType name="fcPIR_MOTIVO_RENEGOCIACAO_filtro">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:SalFunctionalClass">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="COD_MOTIVO" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="COD_MOTIVO__MAIORIGUAL" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="COD_MOTIVO__MENORIGUAL" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="DSC_MOTIVO" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="DSC_MOTIVO__MAIORIGUAL" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="DSC_MOTIVO__MENORIGUAL" type="s:string"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="ConsultarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultarResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Incluir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cabecalho" type="tns:fcBaseCapa"/>
+            <s:element minOccurs="0" maxOccurs="1" name="poPIR_MOTIVO_RENEGOCIACAO" type="tns:fcPIR_MOTIVO_RENEGOCIACAO_dados"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="fcPIR_MOTIVO_RENEGOCIACAO_dados">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:SalFunctionalClass">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="COD_MOTIVO" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="DSC_MOTIVO" type="s:string"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="IncluirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IncluirResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Alterar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cabecalho" type="tns:fcBaseCapa"/>
+            <s:element minOccurs="0" maxOccurs="1" name="poPIR_MOTIVO_RENEGOCIACAO" type="tns:fcPIR_MOTIVO_RENEGOCIACAO_dados"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AlterarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AlterarResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Excluir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cabecalho" type="tns:fcBaseCapa"/>
+            <s:element minOccurs="0" maxOccurs="1" name="poPIR_MOTIVO_RENEGOCIACAO" type="tns:fcPIR_MOTIVO_RENEGOCIACAO_dados"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcluirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExcluirResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ConsultarSoapIn">
+    <wsdl:part name="parameters" element="tns:Consultar"/>
+  </wsdl:message>
+  <wsdl:message name="ConsultarSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultarResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IncluirSoapIn">
+    <wsdl:part name="parameters" element="tns:Incluir"/>
+  </wsdl:message>
+  <wsdl:message name="IncluirSoapOut">
+    <wsdl:part name="parameters" element="tns:IncluirResponse"/>
+  </wsdl:message>
+  <wsdl:message name="AlterarSoapIn">
+    <wsdl:part name="parameters" element="tns:Alterar"/>
+  </wsdl:message>
+  <wsdl:message name="AlterarSoapOut">
+    <wsdl:part name="parameters" element="tns:AlterarResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ExcluirSoapIn">
+    <wsdl:part name="parameters" element="tns:Excluir"/>
+  </wsdl:message>
+  <wsdl:message name="ExcluirSoapOut">
+    <wsdl:part name="parameters" element="tns:ExcluirResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="wsPIR_MOTIVO_RENEGOCIACAOSoap">
+    <wsdl:operation name="Consultar">
+      <wsdl:input message="tns:ConsultarSoapIn"/>
+      <wsdl:output message="tns:ConsultarSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Incluir">
+      <wsdl:input message="tns:IncluirSoapIn"/>
+      <wsdl:output message="tns:IncluirSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Alterar">
+      <wsdl:input message="tns:AlterarSoapIn"/>
+      <wsdl:output message="tns:AlterarSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Excluir">
+      <wsdl:input message="tns:ExcluirSoapIn"/>
+      <wsdl:output message="tns:ExcluirSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="wsPIR_MOTIVO_RENEGOCIACAOHttpGet"/>
+  <wsdl:portType name="wsPIR_MOTIVO_RENEGOCIACAOHttpPost"/>
+  <wsdl:binding name="wsPIR_MOTIVO_RENEGOCIACAOSoap" type="tns:wsPIR_MOTIVO_RENEGOCIACAOSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Consultar">
+      <soap:operation soapAction="Pir360/Consultar" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Incluir">
+      <soap:operation soapAction="Pir360/Incluir" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Alterar">
+      <soap:operation soapAction="Pir360/Alterar" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Excluir">
+      <soap:operation soapAction="Pir360/Excluir" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsPIR_MOTIVO_RENEGOCIACAOSoap12" type="tns:wsPIR_MOTIVO_RENEGOCIACAOSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Consultar">
+      <soap12:operation soapAction="Pir360/Consultar" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Incluir">
+      <soap12:operation soapAction="Pir360/Incluir" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Alterar">
+      <soap12:operation soapAction="Pir360/Alterar" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Excluir">
+      <soap12:operation soapAction="Pir360/Excluir" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsPIR_MOTIVO_RENEGOCIACAOHttpGet" type="tns:wsPIR_MOTIVO_RENEGOCIACAOHttpGet">
+    <http:binding verb="GET"/>
+  </wsdl:binding>
+  <wsdl:binding name="wsPIR_MOTIVO_RENEGOCIACAOHttpPost" type="tns:wsPIR_MOTIVO_RENEGOCIACAOHttpPost">
+    <http:binding verb="POST"/>
+  </wsdl:binding>
+  <wsdl:service name="wsPIR_MOTIVO_RENEGOCIACAO">
+    <wsdl:port name="wsPIR_MOTIVO_RENEGOCIACAOSoap" binding="tns:wsPIR_MOTIVO_RENEGOCIACAOSoap">
+      <soap:address location="http://localhost/Desenv_Aluno02/wsPIR_MOTIVO_RENEGOCIACAO.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="wsPIR_MOTIVO_RENEGOCIACAOSoap12" binding="tns:wsPIR_MOTIVO_RENEGOCIACAOSoap12">
+      <soap12:address location="http://localhost/Desenv_Aluno02/wsPIR_MOTIVO_RENEGOCIACAO.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="wsPIR_MOTIVO_RENEGOCIACAOHttpGet" binding="tns:wsPIR_MOTIVO_RENEGOCIACAOHttpGet">
+      <http:address location="http://localhost/Desenv_Aluno02/wsPIR_MOTIVO_RENEGOCIACAO.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="wsPIR_MOTIVO_RENEGOCIACAOHttpPost" binding="tns:wsPIR_MOTIVO_RENEGOCIACAOHttpPost">
+      <http:address location="http://localhost/Desenv_Aluno02/wsPIR_MOTIVO_RENEGOCIACAO.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost/Desenv_Aluno02/wsPIR_MOTIVO_RENEGOCIACAO.asmx</con:endpoint></con:endpoints><con:operation id="6a79e8c7-e3a8-42a8-ab1f-23b765a35506" isOneWay="false" action="Pir360/Alterar" name="Alterar" bindingOperationName="Alterar" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="8b9a36b7-d305-4ba1-8bb4-480dd2acd270" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsPIR_MOTIVO_RENEGOCIACAO.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="Pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:Alterar>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:poPIR_MOTIVO_RENEGOCIACAO>\r
+            <!--Optional:-->\r
+            <pir:COD_MOTIVO>?</pir:COD_MOTIVO>\r
+            <!--Optional:-->\r
+            <pir:DSC_MOTIVO>?</pir:DSC_MOTIVO>\r
+         </pir:poPIR_MOTIVO_RENEGOCIACAO>\r
+      </pir:Alterar>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="Pir360/Alterar"/></con:call></con:operation><con:operation id="2f0e86c7-fb77-4e71-950f-2024bcd84876" isOneWay="false" action="Pir360/Consultar" name="Consultar" bindingOperationName="Consultar" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7783883d-a0db-45c3-822d-197475cd3f69" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsPIR_MOTIVO_RENEGOCIACAO.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="Pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:Consultar>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>F3D28074E28E6F95E0530FD4210A0593</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>001</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:oFiltro>\r
+            <!--Optional:-->\r
+            <pir:COD_MOTIVO></pir:COD_MOTIVO>\r
+            <!--Optional:-->\r
+            <pir:COD_MOTIVO__MAIORIGUAL></pir:COD_MOTIVO__MAIORIGUAL>\r
+            <!--Optional:-->\r
+            <pir:COD_MOTIVO__MENORIGUAL></pir:COD_MOTIVO__MENORIGUAL>\r
+            <!--Optional:-->\r
+            <pir:DSC_MOTIVO></pir:DSC_MOTIVO>\r
+            <!--Optional:-->\r
+            <pir:DSC_MOTIVO__MAIORIGUAL></pir:DSC_MOTIVO__MAIORIGUAL>\r
+            <!--Optional:-->\r
+            <pir:DSC_MOTIVO__MENORIGUAL></pir:DSC_MOTIVO__MENORIGUAL>\r
+         </pir:oFiltro>\r
+      </pir:Consultar>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="Pir360/Consultar"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="85915404-b13b-4616-838f-6bf5dd80462e" isOneWay="false" action="Pir360/Excluir" name="Excluir" bindingOperationName="Excluir" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="972c8540-996f-4e5b-832c-7739cdfbda1e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsPIR_MOTIVO_RENEGOCIACAO.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="Pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:Excluir>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:poPIR_MOTIVO_RENEGOCIACAO>\r
+            <!--Optional:-->\r
+            <pir:COD_MOTIVO>?</pir:COD_MOTIVO>\r
+            <!--Optional:-->\r
+            <pir:DSC_MOTIVO>?</pir:DSC_MOTIVO>\r
+         </pir:poPIR_MOTIVO_RENEGOCIACAO>\r
+      </pir:Excluir>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="Pir360/Excluir"/></con:call></con:operation><con:operation id="eed50eff-f7f1-4260-93eb-2f03463e36d2" isOneWay="false" action="Pir360/Incluir" name="Incluir" bindingOperationName="Incluir" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6a416bd6-873e-40ab-aa09-540674c072ac" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsPIR_MOTIVO_RENEGOCIACAO.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="Pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:Incluir>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:poPIR_MOTIVO_RENEGOCIACAO>\r
+            <!--Optional:-->\r
+            <pir:COD_MOTIVO>?</pir:COD_MOTIVO>\r
+            <!--Optional:-->\r
+            <pir:DSC_MOTIVO>?</pir:DSC_MOTIVO>\r
+         </pir:poPIR_MOTIVO_RENEGOCIACAO>\r
+      </pir:Incluir>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="Pir360/Incluir"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="2e0b7eea-68bc-4097-ac57-38bc36525a37" activeEnvironment="Default" name="wsTIPO_DOCUMENTO" resourceRoot="" soapui-version="5.6.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="8ce3a82d-9279-4f77-a7ce-963eed845cf2" wsaVersion="NONE" name="wsTIPO_DOCUMENTOSoap" type="wsdl" bindingName="{Pir360}wsTIPO_DOCUMENTOSoap" soapVersion="1_1" anonymous="optional" definition="http://localhost/Desenv_Aluno02/wsTIPO_DOCUMENTO.asmx?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://localhost/Desenv_Aluno02/wsTIPO_DOCUMENTO.asmx</con:endpoint></con:endpoints><con:operation id="a95dc932-c165-4c67-950c-ff400c9626a6" isOneWay="false" action="Pir360/Alterar" name="Alterar" bindingOperationName="Alterar" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="11e03a7b-71ee-4c2b-b771-558707567b0b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsTIPO_DOCUMENTO.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="Pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:Alterar>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:poTIPO_DOCUMENTO>\r
+            <!--Optional:-->\r
+            <pir:CODDOC>?</pir:CODDOC>\r
+            <!--Optional:-->\r
+            <pir:DESCRICAO>?</pir:DESCRICAO>\r
+            <!--Optional:-->\r
+            <pir:NUM_LIQUIDEZ>?</pir:NUM_LIQUIDEZ>\r
+            <!--Optional:-->\r
+            <pir:COD_MODELO_DOCUMENTO>?</pir:COD_MODELO_DOCUMENTO>\r
+            <!--Optional:-->\r
+            <pir:IND_CRTDOC_PEDIDO>?</pir:IND_CRTDOC_PEDIDO>\r
+            <!--Optional:-->\r
+            <pir:IND_NGRV_PEDIDO>?</pir:IND_NGRV_PEDIDO>\r
+            <!--Optional:-->\r
+            <pir:IND_IMPRIME_BOLETO>?</pir:IND_IMPRIME_BOLETO>\r
+            <!--Optional:-->\r
+            <pir:QTD_DIAS_AVISO_DOCUMENTO_VENC>?</pir:QTD_DIAS_AVISO_DOCUMENTO_VENC>\r
+            <!--Optional:-->\r
+            <pir:QTD_REPETICOES_EMAIL_DOC_VENC>?</pir:QTD_REPETICOES_EMAIL_DOC_VENC>\r
+            <!--Optional:-->\r
+            <pir:IND_BLOQUEIA_AF_DOC_VENCIDO>?</pir:IND_BLOQUEIA_AF_DOC_VENCIDO>\r
+            <!--Optional:-->\r
+            <pir:IND_RECCFRETE_SEM_NF>?</pir:IND_RECCFRETE_SEM_NF>\r
+            <!--Optional:-->\r
+            <pir:IND_USANFESERVICO>?</pir:IND_USANFESERVICO>\r
+            <!--Optional:-->\r
+            <pir:QTD_DIAS_FLOAT>?</pir:QTD_DIAS_FLOAT>\r
+            <!--Optional:-->\r
+            <pir:DAT_ALTERACAO_REGISTRO>?</pir:DAT_ALTERACAO_REGISTRO>\r
+         </pir:poTIPO_DOCUMENTO>\r
+      </pir:Alterar>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="Pir360/Alterar"/></con:call></con:operation><con:operation id="1faba1e9-dc67-4a7f-9fc2-46d6747f1598" isOneWay="false" action="Pir360/Consultar" name="Consultar" bindingOperationName="Consultar" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9400be3c-d338-4bba-99ba-70891de77318" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsTIPO_DOCUMENTO.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="Pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:Consultar>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>F3D1C7A226315634E0530FD4210A7779</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>001</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:oFiltro>\r
+            <!--Optional:-->\r
+            <pir:CODDOC></pir:CODDOC>\r
+            <!--Optional:-->\r
+            <pir:CODDOC__MAIORIGUAL></pir:CODDOC__MAIORIGUAL>\r
+            <!--Optional:-->\r
+            <pir:CODDOC__MENORIGUAL></pir:CODDOC__MENORIGUAL>\r
+            <!--Optional:-->\r
+            <pir:DESCRICAO></pir:DESCRICAO>\r
+            <!--Optional:-->\r
+            <pir:DESCRICAO__MAIORIGUAL></pir:DESCRICAO__MAIORIGUAL>\r
+            <!--Optional:-->\r
+            <pir:DESCRICAO__MENORIGUAL></pir:DESCRICAO__MENORIGUAL>\r
+         </pir:oFiltro>\r
+      </pir:Consultar>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="Pir360/Consultar"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="2530f49c-de53-421d-9c3e-ca900061747d" isOneWay="false" action="Pir360/Excluir" name="Excluir" bindingOperationName="Excluir" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="06ac36bc-000d-4720-aecd-36ec3699ed7c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsTIPO_DOCUMENTO.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="Pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:Excluir>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:poTIPO_DOCUMENTO>\r
+            <!--Optional:-->\r
+            <pir:CODDOC>?</pir:CODDOC>\r
+            <!--Optional:-->\r
+            <pir:DESCRICAO>?</pir:DESCRICAO>\r
+            <!--Optional:-->\r
+            <pir:NUM_LIQUIDEZ>?</pir:NUM_LIQUIDEZ>\r
+            <!--Optional:-->\r
+            <pir:COD_MODELO_DOCUMENTO>?</pir:COD_MODELO_DOCUMENTO>\r
+            <!--Optional:-->\r
+            <pir:IND_CRTDOC_PEDIDO>?</pir:IND_CRTDOC_PEDIDO>\r
+            <!--Optional:-->\r
+            <pir:IND_NGRV_PEDIDO>?</pir:IND_NGRV_PEDIDO>\r
+            <!--Optional:-->\r
+            <pir:IND_IMPRIME_BOLETO>?</pir:IND_IMPRIME_BOLETO>\r
+            <!--Optional:-->\r
+            <pir:QTD_DIAS_AVISO_DOCUMENTO_VENC>?</pir:QTD_DIAS_AVISO_DOCUMENTO_VENC>\r
+            <!--Optional:-->\r
+            <pir:QTD_REPETICOES_EMAIL_DOC_VENC>?</pir:QTD_REPETICOES_EMAIL_DOC_VENC>\r
+            <!--Optional:-->\r
+            <pir:IND_BLOQUEIA_AF_DOC_VENCIDO>?</pir:IND_BLOQUEIA_AF_DOC_VENCIDO>\r
+            <!--Optional:-->\r
+            <pir:IND_RECCFRETE_SEM_NF>?</pir:IND_RECCFRETE_SEM_NF>\r
+            <!--Optional:-->\r
+            <pir:IND_USANFESERVICO>?</pir:IND_USANFESERVICO>\r
+            <!--Optional:-->\r
+            <pir:QTD_DIAS_FLOAT>?</pir:QTD_DIAS_FLOAT>\r
+            <!--Optional:-->\r
+            <pir:DAT_ALTERACAO_REGISTRO>?</pir:DAT_ALTERACAO_REGISTRO>\r
+         </pir:poTIPO_DOCUMENTO>\r
+      </pir:Excluir>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="Pir360/Excluir"/></con:call></con:operation><con:operation id="7f0a61cd-6ebb-404e-a26a-6ddd91726d0e" isOneWay="false" action="Pir360/Incluir" name="Incluir" bindingOperationName="Incluir" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="11f1c9a2-c668-4180-9a60-e2b08e7f17ef" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsTIPO_DOCUMENTO.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pir="Pir360">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pir:Incluir>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:poTIPO_DOCUMENTO>\r
+            <!--Optional:-->\r
+            <pir:CODDOC>?</pir:CODDOC>\r
+            <!--Optional:-->\r
+            <pir:DESCRICAO>?</pir:DESCRICAO>\r
+            <!--Optional:-->\r
+            <pir:NUM_LIQUIDEZ>?</pir:NUM_LIQUIDEZ>\r
+            <!--Optional:-->\r
+            <pir:COD_MODELO_DOCUMENTO>?</pir:COD_MODELO_DOCUMENTO>\r
+            <!--Optional:-->\r
+            <pir:IND_CRTDOC_PEDIDO>?</pir:IND_CRTDOC_PEDIDO>\r
+            <!--Optional:-->\r
+            <pir:IND_NGRV_PEDIDO>?</pir:IND_NGRV_PEDIDO>\r
+            <!--Optional:-->\r
+            <pir:IND_IMPRIME_BOLETO>?</pir:IND_IMPRIME_BOLETO>\r
+            <!--Optional:-->\r
+            <pir:QTD_DIAS_AVISO_DOCUMENTO_VENC>?</pir:QTD_DIAS_AVISO_DOCUMENTO_VENC>\r
+            <!--Optional:-->\r
+            <pir:QTD_REPETICOES_EMAIL_DOC_VENC>?</pir:QTD_REPETICOES_EMAIL_DOC_VENC>\r
+            <!--Optional:-->\r
+            <pir:IND_BLOQUEIA_AF_DOC_VENCIDO>?</pir:IND_BLOQUEIA_AF_DOC_VENCIDO>\r
+            <!--Optional:-->\r
+            <pir:IND_RECCFRETE_SEM_NF>?</pir:IND_RECCFRETE_SEM_NF>\r
+            <!--Optional:-->\r
+            <pir:IND_USANFESERVICO>?</pir:IND_USANFESERVICO>\r
+            <!--Optional:-->\r
+            <pir:QTD_DIAS_FLOAT>?</pir:QTD_DIAS_FLOAT>\r
+            <!--Optional:-->\r
+            <pir:DAT_ALTERACAO_REGISTRO>?</pir:DAT_ALTERACAO_REGISTRO>\r
+         </pir:poTIPO_DOCUMENTO>\r
+      </pir:Incluir>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="Pir360/Incluir"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="38ea370b-9801-45dd-bb93-41f48f6a0e87" wsaVersion="NONE" name="wsTIPO_DOCUMENTOSoap12" type="wsdl" bindingName="{Pir360}wsTIPO_DOCUMENTOSoap12" soapVersion="1_2" anonymous="optional" definition="http://localhost/Desenv_Aluno02/wsTIPO_DOCUMENTO.asmx?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost/Desenv_Aluno02/wsTIPO_DOCUMENTO.asmx?wsdl"><con:part><con:url>http://localhost/Desenv_Aluno02/wsTIPO_DOCUMENTO.asmx?wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="Pir360" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="Pir360" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="Pir360">
+      <s:element name="Consultar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cabecalho" type="tns:fcBaseCapa"/>
+            <s:element minOccurs="0" maxOccurs="1" name="oFiltro" type="tns:fcTIPO_DOCUMENTO_filtro"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="fcBaseCapa">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:SalFunctionalClass">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="empresa" type="s:string"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="SalFunctionalClass"/>
+      <s:complexType name="fcTIPO_DOCUMENTO_filtro">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:SalFunctionalClass">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="CODDOC" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="CODDOC__MAIORIGUAL" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="CODDOC__MENORIGUAL" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="DESCRICAO" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="DESCRICAO__MAIORIGUAL" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="DESCRICAO__MENORIGUAL" type="s:string"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="ConsultarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultarResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Incluir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cabecalho" type="tns:fcBaseCapa"/>
+            <s:element minOccurs="0" maxOccurs="1" name="poTIPO_DOCUMENTO" type="tns:fcTIPO_DOCUMENTO_dados"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="fcTIPO_DOCUMENTO_dados">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:SalFunctionalClass">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="CODDOC" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="DESCRICAO" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="NUM_LIQUIDEZ" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="COD_MODELO_DOCUMENTO" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="IND_CRTDOC_PEDIDO" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="IND_NGRV_PEDIDO" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="IND_IMPRIME_BOLETO" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="QTD_DIAS_AVISO_DOCUMENTO_VENC" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="QTD_REPETICOES_EMAIL_DOC_VENC" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="IND_BLOQUEIA_AF_DOC_VENCIDO" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="IND_RECCFRETE_SEM_NF" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="IND_USANFESERVICO" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="QTD_DIAS_FLOAT" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="DAT_ALTERACAO_REGISTRO" type="s:string"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="IncluirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IncluirResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Alterar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cabecalho" type="tns:fcBaseCapa"/>
+            <s:element minOccurs="0" maxOccurs="1" name="poTIPO_DOCUMENTO" type="tns:fcTIPO_DOCUMENTO_dados"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AlterarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AlterarResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Excluir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cabecalho" type="tns:fcBaseCapa"/>
+            <s:element minOccurs="0" maxOccurs="1" name="poTIPO_DOCUMENTO" type="tns:fcTIPO_DOCUMENTO_dados"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcluirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExcluirResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ConsultarSoapIn">
+    <wsdl:part name="parameters" element="tns:Consultar"/>
+  </wsdl:message>
+  <wsdl:message name="ConsultarSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultarResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IncluirSoapIn">
+    <wsdl:part name="parameters" element="tns:Incluir"/>
+  </wsdl:message>
+  <wsdl:message name="IncluirSoapOut">
+    <wsdl:part name="parameters" element="tns:IncluirResponse"/>
+  </wsdl:message>
+  <wsdl:message name="AlterarSoapIn">
+    <wsdl:part name="parameters" element="tns:Alterar"/>
+  </wsdl:message>
+  <wsdl:message name="AlterarSoapOut">
+    <wsdl:part name="parameters" element="tns:AlterarResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ExcluirSoapIn">
+    <wsdl:part name="parameters" element="tns:Excluir"/>
+  </wsdl:message>
+  <wsdl:message name="ExcluirSoapOut">
+    <wsdl:part name="parameters" element="tns:ExcluirResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="wsTIPO_DOCUMENTOSoap">
+    <wsdl:operation name="Consultar">
+      <wsdl:input message="tns:ConsultarSoapIn"/>
+      <wsdl:output message="tns:ConsultarSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Incluir">
+      <wsdl:input message="tns:IncluirSoapIn"/>
+      <wsdl:output message="tns:IncluirSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Alterar">
+      <wsdl:input message="tns:AlterarSoapIn"/>
+      <wsdl:output message="tns:AlterarSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Excluir">
+      <wsdl:input message="tns:ExcluirSoapIn"/>
+      <wsdl:output message="tns:ExcluirSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="wsTIPO_DOCUMENTOHttpGet"/>
+  <wsdl:portType name="wsTIPO_DOCUMENTOHttpPost"/>
+  <wsdl:binding name="wsTIPO_DOCUMENTOSoap" type="tns:wsTIPO_DOCUMENTOSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Consultar">
+      <soap:operation soapAction="Pir360/Consultar" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Incluir">
+      <soap:operation soapAction="Pir360/Incluir" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Alterar">
+      <soap:operation soapAction="Pir360/Alterar" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Excluir">
+      <soap:operation soapAction="Pir360/Excluir" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsTIPO_DOCUMENTOSoap12" type="tns:wsTIPO_DOCUMENTOSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Consultar">
+      <soap12:operation soapAction="Pir360/Consultar" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Incluir">
+      <soap12:operation soapAction="Pir360/Incluir" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Alterar">
+      <soap12:operation soapAction="Pir360/Alterar" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Excluir">
+      <soap12:operation soapAction="Pir360/Excluir" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsTIPO_DOCUMENTOHttpGet" type="tns:wsTIPO_DOCUMENTOHttpGet">
+    <http:binding verb="GET"/>
+  </wsdl:binding>
+  <wsdl:binding name="wsTIPO_DOCUMENTOHttpPost" type="tns:wsTIPO_DOCUMENTOHttpPost">
+    <http:binding verb="POST"/>
+  </wsdl:binding>
+  <wsdl:service name="wsTIPO_DOCUMENTO">
+    <wsdl:port name="wsTIPO_DOCUMENTOSoap" binding="tns:wsTIPO_DOCUMENTOSoap">
+      <soap:address location="http://localhost/Desenv_Aluno02/wsTIPO_DOCUMENTO.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="wsTIPO_DOCUMENTOSoap12" binding="tns:wsTIPO_DOCUMENTOSoap12">
+      <soap12:address location="http://localhost/Desenv_Aluno02/wsTIPO_DOCUMENTO.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="wsTIPO_DOCUMENTOHttpGet" binding="tns:wsTIPO_DOCUMENTOHttpGet">
+      <http:address location="http://localhost/Desenv_Aluno02/wsTIPO_DOCUMENTO.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="wsTIPO_DOCUMENTOHttpPost" binding="tns:wsTIPO_DOCUMENTOHttpPost">
+      <http:address location="http://localhost/Desenv_Aluno02/wsTIPO_DOCUMENTO.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost/Desenv_Aluno02/wsTIPO_DOCUMENTO.asmx</con:endpoint></con:endpoints><con:operation id="5959669a-0d9b-4e42-bef1-3bd1ad5eea37" isOneWay="false" action="Pir360/Alterar" name="Alterar" bindingOperationName="Alterar" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ae003520-c616-4dc2-a34d-6c42194b7469" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsTIPO_DOCUMENTO.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="Pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:Alterar>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:poTIPO_DOCUMENTO>\r
+            <!--Optional:-->\r
+            <pir:CODDOC>?</pir:CODDOC>\r
+            <!--Optional:-->\r
+            <pir:DESCRICAO>?</pir:DESCRICAO>\r
+            <!--Optional:-->\r
+            <pir:NUM_LIQUIDEZ>?</pir:NUM_LIQUIDEZ>\r
+            <!--Optional:-->\r
+            <pir:COD_MODELO_DOCUMENTO>?</pir:COD_MODELO_DOCUMENTO>\r
+            <!--Optional:-->\r
+            <pir:IND_CRTDOC_PEDIDO>?</pir:IND_CRTDOC_PEDIDO>\r
+            <!--Optional:-->\r
+            <pir:IND_NGRV_PEDIDO>?</pir:IND_NGRV_PEDIDO>\r
+            <!--Optional:-->\r
+            <pir:IND_IMPRIME_BOLETO>?</pir:IND_IMPRIME_BOLETO>\r
+            <!--Optional:-->\r
+            <pir:QTD_DIAS_AVISO_DOCUMENTO_VENC>?</pir:QTD_DIAS_AVISO_DOCUMENTO_VENC>\r
+            <!--Optional:-->\r
+            <pir:QTD_REPETICOES_EMAIL_DOC_VENC>?</pir:QTD_REPETICOES_EMAIL_DOC_VENC>\r
+            <!--Optional:-->\r
+            <pir:IND_BLOQUEIA_AF_DOC_VENCIDO>?</pir:IND_BLOQUEIA_AF_DOC_VENCIDO>\r
+            <!--Optional:-->\r
+            <pir:IND_RECCFRETE_SEM_NF>?</pir:IND_RECCFRETE_SEM_NF>\r
+            <!--Optional:-->\r
+            <pir:IND_USANFESERVICO>?</pir:IND_USANFESERVICO>\r
+            <!--Optional:-->\r
+            <pir:QTD_DIAS_FLOAT>?</pir:QTD_DIAS_FLOAT>\r
+            <!--Optional:-->\r
+            <pir:DAT_ALTERACAO_REGISTRO>?</pir:DAT_ALTERACAO_REGISTRO>\r
+         </pir:poTIPO_DOCUMENTO>\r
+      </pir:Alterar>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="Pir360/wsTIPO_DOCUMENTOSoap/AlterarRequest"/></con:call></con:operation><con:operation id="8997fddd-3c2a-49bc-9d0b-c186ab785a82" isOneWay="false" action="Pir360/Consultar" name="Consultar" bindingOperationName="Consultar" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f8f9c7ca-7cf3-4f7e-9616-d64f94fc0c43" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsTIPO_DOCUMENTO.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="Pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:Consultar>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:oFiltro>\r
+            <!--Optional:-->\r
+            <pir:CODDOC>?</pir:CODDOC>\r
+            <!--Optional:-->\r
+            <pir:CODDOC__MAIORIGUAL>?</pir:CODDOC__MAIORIGUAL>\r
+            <!--Optional:-->\r
+            <pir:CODDOC__MENORIGUAL>?</pir:CODDOC__MENORIGUAL>\r
+            <!--Optional:-->\r
+            <pir:DESCRICAO>?</pir:DESCRICAO>\r
+            <!--Optional:-->\r
+            <pir:DESCRICAO__MAIORIGUAL>?</pir:DESCRICAO__MAIORIGUAL>\r
+            <!--Optional:-->\r
+            <pir:DESCRICAO__MENORIGUAL>?</pir:DESCRICAO__MENORIGUAL>\r
+         </pir:oFiltro>\r
+      </pir:Consultar>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="Pir360/wsTIPO_DOCUMENTOSoap/ConsultarRequest"/></con:call></con:operation><con:operation id="28e0c6a8-0a99-4eaa-b8d4-be4eaf7aeec8" isOneWay="false" action="Pir360/Excluir" name="Excluir" bindingOperationName="Excluir" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0c73809b-1e20-4aa0-aab7-b7ae768e77bb" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsTIPO_DOCUMENTO.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="Pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:Excluir>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:poTIPO_DOCUMENTO>\r
+            <!--Optional:-->\r
+            <pir:CODDOC>?</pir:CODDOC>\r
+            <!--Optional:-->\r
+            <pir:DESCRICAO>?</pir:DESCRICAO>\r
+            <!--Optional:-->\r
+            <pir:NUM_LIQUIDEZ>?</pir:NUM_LIQUIDEZ>\r
+            <!--Optional:-->\r
+            <pir:COD_MODELO_DOCUMENTO>?</pir:COD_MODELO_DOCUMENTO>\r
+            <!--Optional:-->\r
+            <pir:IND_CRTDOC_PEDIDO>?</pir:IND_CRTDOC_PEDIDO>\r
+            <!--Optional:-->\r
+            <pir:IND_NGRV_PEDIDO>?</pir:IND_NGRV_PEDIDO>\r
+            <!--Optional:-->\r
+            <pir:IND_IMPRIME_BOLETO>?</pir:IND_IMPRIME_BOLETO>\r
+            <!--Optional:-->\r
+            <pir:QTD_DIAS_AVISO_DOCUMENTO_VENC>?</pir:QTD_DIAS_AVISO_DOCUMENTO_VENC>\r
+            <!--Optional:-->\r
+            <pir:QTD_REPETICOES_EMAIL_DOC_VENC>?</pir:QTD_REPETICOES_EMAIL_DOC_VENC>\r
+            <!--Optional:-->\r
+            <pir:IND_BLOQUEIA_AF_DOC_VENCIDO>?</pir:IND_BLOQUEIA_AF_DOC_VENCIDO>\r
+            <!--Optional:-->\r
+            <pir:IND_RECCFRETE_SEM_NF>?</pir:IND_RECCFRETE_SEM_NF>\r
+            <!--Optional:-->\r
+            <pir:IND_USANFESERVICO>?</pir:IND_USANFESERVICO>\r
+            <!--Optional:-->\r
+            <pir:QTD_DIAS_FLOAT>?</pir:QTD_DIAS_FLOAT>\r
+            <!--Optional:-->\r
+            <pir:DAT_ALTERACAO_REGISTRO>?</pir:DAT_ALTERACAO_REGISTRO>\r
+         </pir:poTIPO_DOCUMENTO>\r
+      </pir:Excluir>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="Pir360/wsTIPO_DOCUMENTOSoap/ExcluirRequest"/></con:call></con:operation><con:operation id="e0a434fe-fc0f-4949-9d89-cc8ae43cbfd0" isOneWay="false" action="Pir360/Incluir" name="Incluir" bindingOperationName="Incluir" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d065478f-7b28-4c4a-a3aa-2c95beb8fbf2" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost/Desenv_Aluno02/wsTIPO_DOCUMENTO.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pir="Pir360">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <pir:Incluir>\r
+         <!--Optional:-->\r
+         <pir:cabecalho>\r
+            <!--Optional:-->\r
+            <pir:token>?</pir:token>\r
+            <!--Optional:-->\r
+            <pir:empresa>?</pir:empresa>\r
+         </pir:cabecalho>\r
+         <!--Optional:-->\r
+         <pir:poTIPO_DOCUMENTO>\r
+            <!--Optional:-->\r
+            <pir:CODDOC>?</pir:CODDOC>\r
+            <!--Optional:-->\r
+            <pir:DESCRICAO>?</pir:DESCRICAO>\r
+            <!--Optional:-->\r
+            <pir:NUM_LIQUIDEZ>?</pir:NUM_LIQUIDEZ>\r
+            <!--Optional:-->\r
+            <pir:COD_MODELO_DOCUMENTO>?</pir:COD_MODELO_DOCUMENTO>\r
+            <!--Optional:-->\r
+            <pir:IND_CRTDOC_PEDIDO>?</pir:IND_CRTDOC_PEDIDO>\r
+            <!--Optional:-->\r
+            <pir:IND_NGRV_PEDIDO>?</pir:IND_NGRV_PEDIDO>\r
+            <!--Optional:-->\r
+            <pir:IND_IMPRIME_BOLETO>?</pir:IND_IMPRIME_BOLETO>\r
+            <!--Optional:-->\r
+            <pir:QTD_DIAS_AVISO_DOCUMENTO_VENC>?</pir:QTD_DIAS_AVISO_DOCUMENTO_VENC>\r
+            <!--Optional:-->\r
+            <pir:QTD_REPETICOES_EMAIL_DOC_VENC>?</pir:QTD_REPETICOES_EMAIL_DOC_VENC>\r
+            <!--Optional:-->\r
+            <pir:IND_BLOQUEIA_AF_DOC_VENCIDO>?</pir:IND_BLOQUEIA_AF_DOC_VENCIDO>\r
+            <!--Optional:-->\r
+            <pir:IND_RECCFRETE_SEM_NF>?</pir:IND_RECCFRETE_SEM_NF>\r
+            <!--Optional:-->\r
+            <pir:IND_USANFESERVICO>?</pir:IND_USANFESERVICO>\r
+            <!--Optional:-->\r
+            <pir:QTD_DIAS_FLOAT>?</pir:QTD_DIAS_FLOAT>\r
+            <!--Optional:-->\r
+            <pir:DAT_ALTERACAO_REGISTRO>?</pir:DAT_ALTERACAO_REGISTRO>\r
+         </pir:poTIPO_DOCUMENTO>\r
+      </pir:Incluir>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="Pir360/wsTIPO_DOCUMENTOSoap/IncluirRequest"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

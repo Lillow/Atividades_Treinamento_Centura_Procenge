@@ -22,4 +22,8 @@ idGeração= 2797 sUserName= aluno02 Tabela= CLIENTES_CURSO VersãoDB= 6.04.00 Revi
 init
 idGeração= 2797 sUserName= aluno02 Tabela= TIPOLANC VersãoDB= 6.04.00 Revisão= 152 Now= 01/02/2023 09:53:12:420000 ProductVersion=  v 5.7.2  sCaminhoRobo= C:\Treinamento Centura\Aluno02\Robo360
 init
-idGeração= 2797 sUserName= aluno02 Tabela= TIPO_CERTIFICACAO VersãoDB= 6.04.00 Revisão= 152 Now= 01/02/2023 16:11:55:460000 ProductVersion=  v 5.7.2  sCaminhoRobo= C:\Treinamento Centura\Aluno02\Robo360
+idGeração= 2797 sUserName= aluno02 Tabela= TIPO_CERTIFICACAO VersãoDB= 6.04.00 Revisão= 152 Now= 01/02/2023 16:11:55:460000 ProductVersion=  v 5.7.2  sCaminhoRobo= C:\Treinamento Centura\Aluno02\Robo360
+init
+idGeração= 2797 sUserName= aluno02 Tabela= TIPO_DOCUMENTO VersãoDB= 6.04.00 Revisão= 152 Now= 03/02/2023 16:05:27:450000 ProductVersion=  v 5.7.2  sCaminhoRobo= C:\Treinamento Centura\Aluno02\Robo360
+init
+idGeração= 2797 sUserName= aluno02 Tabela= PIR_MOTIVO_RENEGOCIACAO VersãoDB= 6.04.00 Revisão= 152 Now= 03/02/2023 17:04:44:550000 ProductVersion=  v 5.7.2  sCaminhoRobo= C:\Treinamento Centura\Aluno02\Robo360
