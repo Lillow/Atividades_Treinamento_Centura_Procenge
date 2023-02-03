@@ -1,0 +1,1 @@
+<%@ WebService Class="Pir360.wsTIPO_CERTIFICACAO" %>

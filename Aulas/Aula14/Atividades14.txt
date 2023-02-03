@@ -1,0 +1,24 @@
+﻿	Desktop		Pir360
+.apt	  Menu		WebService
+.apl	Janelas		Classes
+
+
+Webservice 1 
+Tabela: TIPOLANC
+    janela: mdifrmTipoLancamento
+   fonte: cnt_lanc.apl
+
+Webservice 2
+Tabela: TIPO_CERTIFICACAO
+    janela: mdifrmTipoCert
+   fonte: Fornec.apl
+
+Webservice 3
+Tabela: TIPO_DOCUMENTO
+    mdifrmTipoDoc
+   fonte: Mov_aux.apl
+ 
+WebService 4 
+Tabela: PIR_MOTIVO_RENEGOCIACAO
+    janela: mdifrmMotivoReneg
+   fonte: Auxiliar.apl
