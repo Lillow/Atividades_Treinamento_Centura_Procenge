@@ -1,1 +1,0 @@
-<%@ WebService Class="pir360.wsCLIENTES_CURSO" %>
